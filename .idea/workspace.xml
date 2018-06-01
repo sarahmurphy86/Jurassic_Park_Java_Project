@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0dda099-7617-4bea-b62e-235c00b08bd9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Dinosaurs/Dinosaur.java" afterPath="$PROJECT_DIR$/src/main/java/Dinosaurs/Dinosaur.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Dinosaurs/FoodType.java" afterPath="$PROJECT_DIR$/src/main/java/Dinosaurs/FoodType.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/DiplodocusTest.java" afterPath="$PROJECT_DIR$/src/test/java/DiplodocusTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -32,16 +33,16 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FoodType.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FoodType.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Dinosaurs/FoodType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+            <state relative-caret-position="90">
+              <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
               <folding>
-                <element signature="e#158#159#0" expanded="true" />
-                <element signature="e#200#201#0" expanded="true" />
-                <element signature="e#231#232#0" expanded="true" />
-                <element signature="e#268#269#0" expanded="true" />
+                <element signature="e#160#161#0" expanded="true" />
+                <element signature="e#202#203#0" expanded="true" />
+                <element signature="e#233#234#0" expanded="true" />
+                <element signature="e#270#271#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -50,8 +51,8 @@
       <file leaf-file-name="Dinosaur.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Dinosaurs/Dinosaur.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="224">
+              <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
               <folding>
                 <element signature="e#555#556#0" expanded="true" />
                 <element signature="e#587#588#0" expanded="true" />
@@ -63,6 +64,10 @@
                 <element signature="e#809#810#0" expanded="true" />
                 <element signature="e#848#849#0" expanded="true" />
                 <element signature="e#888#889#0" expanded="true" />
+                <element signature="e#1037#1038#0" expanded="true" />
+                <element signature="e#1091#1092#0" expanded="true" />
+                <element signature="e#1135#1136#0" expanded="true" />
+                <element signature="e#1200#1201#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -78,22 +83,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DiplodocusTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="DiplodocusTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/DiplodocusTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+            <state relative-caret-position="303">
+              <caret line="57" column="1" lean-forward="true" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#380#381#0" expanded="true" />
-                <element signature="e#439#440#0" expanded="true" />
-                <element signature="e#485#486#0" expanded="true" />
-                <element signature="e#559#560#0" expanded="true" />
-                <element signature="e#669#670#0" expanded="true" />
-                <element signature="e#712#713#0" expanded="true" />
-                <element signature="e#774#775#0" expanded="true" />
-                <element signature="e#823#824#0" expanded="true" />
-                <element signature="e#891#892#0" expanded="true" />
+                <element signature="e#407#408#0" expanded="true" />
+                <element signature="e#466#467#0" expanded="true" />
+                <element signature="e#512#513#0" expanded="true" />
+                <element signature="e#586#587#0" expanded="true" />
+                <element signature="e#635#636#0" expanded="true" />
+                <element signature="e#696#697#0" expanded="true" />
+                <element signature="e#739#740#0" expanded="true" />
+                <element signature="e#801#802#0" expanded="true" />
+                <element signature="e#850#851#0" expanded="true" />
+                <element signature="e#918#919#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -102,7 +108,7 @@
       <file leaf-file-name="TyrannosaurusTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TyrannosaurusTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
+            <state relative-caret-position="162">
               <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -124,8 +130,8 @@
       <file leaf-file-name="Tyrannosaurus.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Dinosaurs/Tyrannosaurus.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="30">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -440,15 +446,15 @@
         <option value="$PROJECT_DIR$/src/main/java/Dinosaurs/DietType.java" />
         <option value="$PROJECT_DIR$/src/main/java/Dinosaurs/Diplodocus.java" />
         <option value="$PROJECT_DIR$/src/main/java/Dinosaurs/Tyrannosaurus.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Dinosaurs/Dinosaur.java" />
-        <option value="$PROJECT_DIR$/src/test/java/DiplodocusTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/TyrannosaurusTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Dinosaurs/Dinosaur.java" />
         <option value="$PROJECT_DIR$/src/main/java/Dinosaurs/FoodType.java" />
+        <option value="$PROJECT_DIR$/src/test/java/DiplodocusTest.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="12" />
+    <option name="x" value="104" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="709" />
@@ -545,7 +551,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in Jurassic_Park_Java_Project_test">
+  <component name="RunManager" selected="JUnit.DiplodocusTest.canDecreaseHungerLevel">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -607,6 +613,26 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration name="DiplodocusTest.canDecreaseHungerLevel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Jurassic_Park_Java_Project_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DiplodocusTest" />
+      <option name="METHOD_NAME" value="canDecreaseHungerLevel" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="DiplodocusTest.canGetLengthInFeet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Jurassic_Park_Java_Project_test" />
@@ -615,6 +641,26 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="DiplodocusTest" />
       <option name="METHOD_NAME" value="canGetLengthInFeet" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="DiplodocusTest.canIncreaseHungerLevel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Jurassic_Park_Java_Project_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="DiplodocusTest" />
+      <option name="METHOD_NAME" value="canIncreaseHungerLevel" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -687,16 +733,20 @@
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
-    <list size="3">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.DiplodocusTest" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.DiplodocusTest.canGetLengthInFeet" />
       <item index="2" class="java.lang.String" itemvalue="JUnit.All in Jurassic_Park_Java_Project_test" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.DiplodocusTest.canIncreaseHungerLevel" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.DiplodocusTest.canDecreaseHungerLevel" />
     </list>
     <recent_temporary>
-      <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.All in Jurassic_Park_Java_Project_test" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.DiplodocusTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.DiplodocusTest.canGetLengthInFeet" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.DiplodocusTest.canDecreaseHungerLevel" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.DiplodocusTest.canIncreaseHungerLevel" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.All in Jurassic_Park_Java_Project_test" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.DiplodocusTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.DiplodocusTest.canGetLengthInFeet" />
       </list>
     </recent_temporary>
   </component>
@@ -717,33 +767,39 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_Jurassic_Park_Java_Project_test - 2018.06.01 at 16h 08m 12s.xml">
-      <configuration name="All in Jurassic_Park_Java_Project_test" configurationId="JUnit" />
+    <history-entry file="DiplodocusTest_canDecreaseHungerLevel - 2018.06.01 at 16h 40m 35s.xml">
+      <configuration name="DiplodocusTest.canDecreaseHungerLevel" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DiplodocusTest - 2018.06.01 at 15h 40m 54s.xml">
-      <configuration name="DiplodocusTest" configurationId="JUnit" />
+    <history-entry file="DiplodocusTest_canDecreaseHungerLevel - 2018.06.01 at 16h 48m 38s.xml">
+      <configuration name="DiplodocusTest.canDecreaseHungerLevel" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DiplodocusTest - 2018.06.01 at 15h 45m 26s.xml">
-      <configuration name="DiplodocusTest" configurationId="JUnit" />
+    <history-entry file="DiplodocusTest_canDecreaseHungerLevel - 2018.06.01 at 16h 49m 51s.xml">
+      <configuration name="DiplodocusTest.canDecreaseHungerLevel" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DiplodocusTest - 2018.06.01 at 15h 46m 30s.xml">
-      <configuration name="DiplodocusTest" configurationId="JUnit" />
+    <history-entry file="DiplodocusTest_canDecreaseHungerLevel - 2018.06.01 at 16h 50m 02s.xml">
+      <configuration name="DiplodocusTest.canDecreaseHungerLevel" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DiplodocusTest - 2018.06.01 at 16h 03m 11s.xml">
-      <configuration name="DiplodocusTest" configurationId="JUnit" />
+    <history-entry file="DiplodocusTest_canIncreaseHungerLevel - 2018.06.01 at 16h 39m 46s.xml">
+      <configuration name="DiplodocusTest.canIncreaseHungerLevel" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DiplodocusTest_canGetLengthInFeet - 2018.06.01 at 15h 47m 58s.xml">
-      <configuration name="DiplodocusTest.canGetLengthInFeet" configurationId="JUnit" />
+    <history-entry file="DiplodocusTest_canIncreaseHungerLevel - 2018.06.01 at 16h 45m 00s.xml">
+      <configuration name="DiplodocusTest.canIncreaseHungerLevel" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DiplodocusTest_canGetLengthInFeet - 2018.06.01 at 15h 48m 41s.xml">
-      <configuration name="DiplodocusTest.canGetLengthInFeet" configurationId="JUnit" />
+    <history-entry file="DiplodocusTest_canIncreaseHungerLevel - 2018.06.01 at 16h 45m 17s.xml">
+      <configuration name="DiplodocusTest.canIncreaseHungerLevel" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DiplodocusTest_canGetLengthInFeet - 2018.06.01 at 15h 49m 09s.xml">
-      <configuration name="DiplodocusTest.canGetLengthInFeet" configurationId="JUnit" />
+    <history-entry file="DiplodocusTest_canIncreaseHungerLevel - 2018.06.01 at 16h 46m 20s.xml">
+      <configuration name="DiplodocusTest.canIncreaseHungerLevel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DiplodocusTest_canIncreaseHungerLevel - 2018.06.01 at 16h 49m 15s.xml">
+      <configuration name="DiplodocusTest.canIncreaseHungerLevel" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="DiplodocusTest_canIncreaseHungerLevel - 2018.06.01 at 16h 49m 48s.xml">
+      <configuration name="DiplodocusTest.canIncreaseHungerLevel" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="12" y="23" width="1280" height="709" extended-state="0" />
+    <frame x="104" y="23" width="1280" height="709" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -754,7 +810,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08320251" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3265306" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -814,6 +870,22 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dinosaurs/DietType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dinosaurs/Tyrannosaurus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Dinosaurs/Diplodocus.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -822,28 +894,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/DiplodocusTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="29" column="37" lean-forward="true" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#380#381#0" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
-            <element signature="e#485#486#0" expanded="true" />
-            <element signature="e#559#560#0" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
-            <element signature="e#712#713#0" expanded="true" />
-            <element signature="e#774#775#0" expanded="true" />
-            <element signature="e#823#824#0" expanded="true" />
-            <element signature="e#891#892#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TyrannosaurusTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
+        <state relative-caret-position="162">
           <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -861,10 +914,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dinosaurs/FoodType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="11" lean-forward="true" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+          <folding>
+            <element signature="e#160#161#0" expanded="true" />
+            <element signature="e#202#203#0" expanded="true" />
+            <element signature="e#233#234#0" expanded="true" />
+            <element signature="e#270#271#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Dinosaurs/Dinosaur.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="224">
+          <caret line="45" column="0" lean-forward="true" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
           <folding>
             <element signature="e#555#556#0" expanded="true" />
             <element signature="e#587#588#0" expanded="true" />
@@ -876,35 +942,30 @@
             <element signature="e#809#810#0" expanded="true" />
             <element signature="e#848#849#0" expanded="true" />
             <element signature="e#888#889#0" expanded="true" />
+            <element signature="e#1037#1038#0" expanded="true" />
+            <element signature="e#1091#1092#0" expanded="true" />
+            <element signature="e#1135#1136#0" expanded="true" />
+            <element signature="e#1200#1201#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Dinosaurs/DietType.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/DiplodocusTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Dinosaurs/Tyrannosaurus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Dinosaurs/FoodType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="0" lean-forward="true" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+        <state relative-caret-position="303">
+          <caret line="57" column="1" lean-forward="true" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
           <folding>
-            <element signature="e#158#159#0" expanded="true" />
-            <element signature="e#200#201#0" expanded="true" />
-            <element signature="e#231#232#0" expanded="true" />
-            <element signature="e#268#269#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#407#408#0" expanded="true" />
+            <element signature="e#466#467#0" expanded="true" />
+            <element signature="e#512#513#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+            <element signature="e#635#636#0" expanded="true" />
+            <element signature="e#696#697#0" expanded="true" />
+            <element signature="e#739#740#0" expanded="true" />
+            <element signature="e#801#802#0" expanded="true" />
+            <element signature="e#850#851#0" expanded="true" />
+            <element signature="e#918#919#0" expanded="true" />
           </folding>
         </state>
       </provider>

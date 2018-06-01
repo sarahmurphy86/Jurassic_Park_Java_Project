@@ -2,8 +2,8 @@ package Dinosaurs;
 
 public enum FoodType {
 
-    DINOBISCUITS(3),
-    CHICKEN(2),
+    DINOBISCUITS(-3),
+    CHICKEN(-2),
     PLANTS(1);
 
     private final int nutrition;
@@ -15,7 +15,5 @@ public enum FoodType {
     public int getNutriton(){
         return this.nutrition;
     }
-
-
 
 }

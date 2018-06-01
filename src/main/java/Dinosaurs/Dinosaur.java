@@ -35,4 +35,17 @@ public abstract class Dinosaur {
     public double getLengthInFeet() {
         return this.lengthInFeet;
     }
+
+//    public int canEat(){
+//        return this.hungerLevel - FoodType.getNutrition();
+//    }
+
+    public int changeHungerLevel(int hungerLevel){
+        return this.hungerLevel += hungerLevel;
+    }
+
+    public int canEat(FoodType foodType) {
+        return this.hungerLevel -= foodType.getNutriton();
+    }
 }
+

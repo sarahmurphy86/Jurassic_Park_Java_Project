@@ -1,5 +1,6 @@
 import Dinosaurs.DietType;
 import Dinosaurs.Diplodocus;
+import Dinosaurs.FoodType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -40,6 +41,19 @@ public class DiplodocusTest {
     public void canGetLengthInFeet(){
         assertEquals(90, diplodocus.getLengthInFeet(), 0.00);
     }
+
+    @Test
+    public void canIncreaseHungerLevel(){
+        diplodocus.canEat(FoodType.CHICKEN);
+        assertEquals(12, diplodocus.getHungerLevel());
+    }
+
+    @Test
+    public void canDecreaseHungerLevel(){
+        diplodocus.canEat(FoodType.PLANTS);
+        assertEquals(9, diplodocus.getHungerLevel());
+    }
+
 
 }
 
