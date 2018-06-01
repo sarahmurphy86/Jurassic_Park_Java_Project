@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Jurassic Park Java Project.iml" filepath="$PROJECT_DIR$/.idea/modules/Jurassic Park Java Project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Jurassic_Park_Java_Project.iml" filepath="$PROJECT_DIR$/.idea/modules/Jurassic_Park_Java_Project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Jurassic_Park_Java_Project_main.iml" filepath="$PROJECT_DIR$/.idea/modules/Jurassic_Park_Java_Project_main.iml" group="Jurassic_Park_Java_Project" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Jurassic_Park_Java_Project_test.iml" filepath="$PROJECT_DIR$/.idea/modules/Jurassic_Park_Java_Project_test.iml" group="Jurassic_Park_Java_Project" />
     </modules>
   </component>
 </project>
