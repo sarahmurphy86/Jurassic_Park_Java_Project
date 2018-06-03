@@ -1,6 +1,7 @@
 package Park;
 
 import Paddocks.Paddock;
+import Paddocks.RaptorPaddock;
 import Visitors.Visitor;
 
 import java.util.ArrayList;
@@ -34,5 +35,12 @@ public class Park {
 
     public int getPaddockCount() {
         return this.paddockList.size();
+    }
+
+    public void addPaddock(Paddock paddock) {
+        this.paddockList.add(paddock);
+    }
+    public void removePaddock(Paddock paddock) {
+        this.paddockList.remove(paddock);
     }
 }
