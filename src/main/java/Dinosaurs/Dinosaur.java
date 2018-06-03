@@ -40,5 +40,6 @@ public abstract class Dinosaur {
     public int canFeed(FoodType foodType) {
         return this.hungerLevel -= foodType.getNutriton();
     }
+
 }
 
