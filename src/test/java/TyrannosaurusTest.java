@@ -1,4 +1,5 @@
 import Dinosaurs.DietType;
+import Dinosaurs.FoodType;
 import Dinosaurs.Tyrannosaurus;
 import org.junit.Before;
 import org.junit.Test;
@@ -32,12 +33,18 @@ public class TyrannosaurusTest {
 
     @Test
     public void canGetWeight(){
-        assertEquals(10, tyrannosaurus.getWeight(), 0.00);
+        assertEquals(10, tyrannosaurus.getWeightInTonnes(), 0.00);
     }
 
     @Test
     public void canGetLengthInFeet(){
         assertEquals(40, tyrannosaurus.getLengthInFeet(), 0.00);
+    }
+
+    @Test
+    public void canDecreaseHungerLevel(){
+        tyrannosaurus.canFeed(FoodType.DINOBISCUITS);
+        assertEquals(2, tyrannosaurus.getHungerLevel());
     }
 
 }

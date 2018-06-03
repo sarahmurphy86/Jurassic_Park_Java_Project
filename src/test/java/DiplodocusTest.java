@@ -34,7 +34,7 @@ public class DiplodocusTest {
 
     @Test
     public void canGetWeight(){
-        assertEquals(15, diplodocus.getWeight(), 0.00);
+        assertEquals(15, diplodocus.getWeightInTonnes(), 0.00);
     }
 
     @Test
@@ -43,14 +43,8 @@ public class DiplodocusTest {
     }
 
     @Test
-    public void canIncreaseHungerLevel(){
-        diplodocus.canEat(FoodType.CHICKEN);
-        assertEquals(12, diplodocus.getHungerLevel());
-    }
-
-    @Test
     public void canDecreaseHungerLevel(){
-        diplodocus.canEat(FoodType.PLANTS);
+        diplodocus.canFeed(FoodType.PLANTS);
         assertEquals(9, diplodocus.getHungerLevel());
     }
 
