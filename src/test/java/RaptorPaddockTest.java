@@ -29,5 +29,25 @@ public class RaptorPaddockTest {
         assertEquals("Raptor Kingdom", raptorPaddock.getPaddockName());
     }
 
+    @Test
+    public void paddockStartsEmpty() {
+        assertEquals(0, raptorPaddock.dinosaurListCount());
 
+    }
+
+    @Test
+    public void canAddDinosaursToPaddock(){
+        raptorPaddock.addDinosaur(velociraptor);
+        raptorPaddock.addDinosaur(tyrannosaurus);
+        assertEquals(2, raptorPaddock.dinosaurListCount());
+    }
+
+    @Test
+    public void canRemoveDinosaursFromPaddock(){
+        raptorPaddock.addDinosaur(velociraptor);
+        raptorPaddock.addDinosaur(tyrannosaurus);
+        raptorPaddock.addDinosaur(diplodocus);
+        raptorPaddock.removeDinosaur(diplodocus);
+        assertEquals(2, raptorPaddock.dinosaurListCount());
+    }
 }

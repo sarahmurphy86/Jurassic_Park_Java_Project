@@ -1,6 +1,8 @@
 package Paddocks;
 
 import Dinosaurs.Dinosaur;
+import Dinosaurs.Diplodocus;
+import Dinosaurs.Velociraptor;
 
 import java.util.ArrayList;
 
@@ -15,5 +17,17 @@ public abstract class Paddock {
 
     public String getPaddockName() {
         return this.name;
+    }
+
+    public int dinosaurListCount() {
+        return this.dinosaurList.size();
+    }
+
+    public void addDinosaur(Dinosaur dinosaur){
+        this.dinosaurList.add(dinosaur);
+    }
+
+    public void removeDinosaur(Dinosaur dinosaur) {
+        this.dinosaurList.remove(dinosaur);
     }
 }
