@@ -2,15 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0dda099-7617-4bea-b62e-235c00b08bd9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Paddocks/Paddock.class" afterPath="$PROJECT_DIR$/out/production/classes/Paddocks/Paddock.class" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Paddocks/RaptorPaddock.class" afterPath="$PROJECT_DIR$/out/production/classes/Paddocks/RaptorPaddock.class" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/RaptorPaddockTest.class" afterPath="$PROJECT_DIR$/out/test/classes/RaptorPaddockTest.class" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dinosaurs/Dinosaur.java" afterPath="$PROJECT_DIR$/src/main/java/Dinosaurs/Dinosaur.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Paddocks/DiplodocusPaddock.java" afterPath="$PROJECT_DIR$/src/main/java/Paddocks/DiplodocusPaddock.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Paddocks/Paddock.java" afterPath="$PROJECT_DIR$/src/main/java/Paddocks/Paddock.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Paddocks/RaptorPaddock.java" afterPath="$PROJECT_DIR$/src/main/java/Paddocks/RaptorPaddock.java" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RaptorPaddockTest.java" afterPath="$PROJECT_DIR$/src/test/java/RaptorPaddockTest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Park/Park.java" afterPath="$PROJECT_DIR$/src/main/java/Park/Park.java" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ParkTest.java" afterPath="$PROJECT_DIR$/src/test/java/ParkTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -91,8 +84,8 @@
       <file leaf-file-name="Park.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Park/Park.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="443">
-              <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+            <state relative-caret-position="316">
+              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#427#428#0" expanded="true" />
@@ -101,6 +94,10 @@
                 <element signature="e#541#542#0" expanded="true" />
                 <element signature="e#588#589#0" expanded="true" />
                 <element signature="e#633#634#0" expanded="true" />
+                <element signature="e#683#684#0" expanded="true" />
+                <element signature="e#731#732#0" expanded="true" />
+                <element signature="e#767#768#0" expanded="true" />
+                <element signature="e#813#814#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,14 +106,16 @@
       <file leaf-file-name="ParkTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ParkTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+            <state relative-caret-position="229">
+              <caret line="51" column="35" lean-forward="true" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#639#640#0" expanded="true" />
                 <element signature="e#700#701#0" expanded="true" />
                 <element signature="e#754#755#0" expanded="true" />
                 <element signature="e#809#810#0" expanded="true" />
+                <element signature="e#1241#1242#0" expanded="true" />
+                <element signature="e#1296#1297#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -520,8 +519,8 @@
         <option value="$PROJECT_DIR$/src/test/java/TyrannosaurusTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Dinosaurs/Dinosaur.java" />
         <option value="$PROJECT_DIR$/src/test/java/RaptorPaddockTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Park/Park.java" />
         <option value="$PROJECT_DIR$/src/test/java/ParkTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Park/Park.java" />
       </list>
     </option>
   </component>
@@ -631,7 +630,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ParkTest.canAddVisitors">
+  <component name="RunManager" selected="JUnit.ParkTest.paddockListStartsEmpty">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -693,6 +692,46 @@
       <envs />
       <patterns />
     </configuration>
+    <configuration name="ParkTest.canRemoveVisitors" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Jurassic_Park_Java_Project_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ParkTest" />
+      <option name="METHOD_NAME" value="canRemoveVisitors" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="ParkTest.paddockListStartsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Jurassic_Park_Java_Project_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ParkTest" />
+      <option name="METHOD_NAME" value="paddockListStartsEmpty" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
     <configuration name="ParkTest.visitorListStartsEmpty" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Jurassic_Park_Java_Project_test" />
@@ -701,46 +740,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ParkTest" />
       <option name="METHOD_NAME" value="visitorListStartsEmpty" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="RaptorPaddockTest.canFindHerbivore__false" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="Jurassic_Park_Java_Project_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RaptorPaddockTest" />
-      <option name="METHOD_NAME" value="canFindHerbivore__false" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="TyrannosaurusTest.canDecreaseHungerLevel" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="Jurassic_Park_Java_Project_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TyrannosaurusTest" />
-      <option name="METHOD_NAME" value="canDecreaseHungerLevel" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -814,19 +813,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.RaptorPaddockTest.canFindHerbivore__false" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TyrannosaurusTest.canDecreaseHungerLevel" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ParkTest.canGetName" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ParkTest.visitorListStartsEmpty" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ParkTest.canAddVisitors" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ParkTest.canGetName" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ParkTest.visitorListStartsEmpty" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ParkTest.canAddVisitors" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ParkTest.canRemoveVisitors" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.ParkTest.paddockListStartsEmpty" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ParkTest.canAddVisitors" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ParkTest.visitorListStartsEmpty" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ParkTest.canGetName" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.RaptorPaddockTest.canFindHerbivore__false" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TyrannosaurusTest.canDecreaseHungerLevel" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.ParkTest.paddockListStartsEmpty" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ParkTest.canRemoveVisitors" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ParkTest.canAddVisitors" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ParkTest.visitorListStartsEmpty" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ParkTest.canGetName" />
       </list>
     </recent_temporary>
   </component>
@@ -853,20 +852,20 @@
     <history-entry file="ParkTest_canAddVisitors - 2018.06.03 at 16h 04m 42s.xml">
       <configuration name="ParkTest.canAddVisitors" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ParkTest_canAddVisitors - 2018.06.03 at 16h 05m 23s.xml">
+      <configuration name="ParkTest.canAddVisitors" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParkTest_canRemoveVisitors - 2018.06.03 at 16h 06m 58s.xml">
+      <configuration name="ParkTest.canRemoveVisitors" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParkTest_paddockListStartsEmpty - 2018.06.03 at 16h 08m 29s.xml">
+      <configuration name="ParkTest.paddockListStartsEmpty" configurationId="JUnit" />
+    </history-entry>
     <history-entry file="ParkTest_visitorListStartsEmpty - 2018.06.03 at 16h 01m 45s.xml">
       <configuration name="ParkTest.visitorListStartsEmpty" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="RaptorPaddockTest_canFindHerbivore__false - 2018.06.03 at 15h 30m 05s.xml">
-      <configuration name="RaptorPaddockTest.canFindHerbivore__false" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RaptorPaddockTest_canFindHerbivore__false - 2018.06.03 at 15h 34m 32s.xml">
-      <configuration name="RaptorPaddockTest.canFindHerbivore__false" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RaptorPaddockTest_canFindHerbivore__false - 2018.06.03 at 15h 45m 05s.xml">
       <configuration name="RaptorPaddockTest.canFindHerbivore__false" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RaptorPaddockTest_canFindHerbivore__true - 2018.06.03 at 15h 34m 37s.xml">
-      <configuration name="RaptorPaddockTest.canFindHerbivore__true" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TyrannosaurusTest_canDecreaseHungerLevel - 2018.06.03 at 15h 43m 32s.xml">
       <configuration name="TyrannosaurusTest.canDecreaseHungerLevel" configurationId="JUnit" />
@@ -880,7 +879,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="120" y="23" width="1280" height="709" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1226,8 +1224,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Park/Park.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="443">
-          <caret line="30" column="0" lean-forward="true" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+        <state relative-caret-position="316">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#427#428#0" expanded="true" />
@@ -1236,20 +1234,26 @@
             <element signature="e#541#542#0" expanded="true" />
             <element signature="e#588#589#0" expanded="true" />
             <element signature="e#633#634#0" expanded="true" />
+            <element signature="e#683#684#0" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
+            <element signature="e#767#768#0" expanded="true" />
+            <element signature="e#813#814#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ParkTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+        <state relative-caret-position="229">
+          <caret line="51" column="35" lean-forward="true" selection-start-line="51" selection-start-column="35" selection-end-line="51" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#639#640#0" expanded="true" />
             <element signature="e#700#701#0" expanded="true" />
             <element signature="e#754#755#0" expanded="true" />
             <element signature="e#809#810#0" expanded="true" />
+            <element signature="e#1241#1242#0" expanded="true" />
+            <element signature="e#1296#1297#0" expanded="true" />
           </folding>
         </state>
       </provider>

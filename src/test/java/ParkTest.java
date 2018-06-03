@@ -37,4 +37,33 @@ public class ParkTest {
         park.addVisitor(visitor);
         assertEquals(1, park.getVisitorCount());
     }
-}
+
+    @Test
+    public void canRemoveVisitors() {
+        park.addVisitor(visitor);
+        park.addVisitor(visitor);
+        park.addVisitor(visitor);
+        park.removeVisitor(visitor);
+        assertEquals(2, park.getVisitorCount());
+    }
+
+    @Test
+    public void paddockListStartsEmpty() {
+        assertEquals(0, park.getPaddockCount());
+    }}
+
+//    @Test
+//    public void canAddVisitors() {
+//        park.addVisitor(visitor);
+//        assertEquals(1, park.getVisitorCount());
+//    }
+//
+//    @Test
+//    public void canRemoveVisitors() {
+//        park.addVisitor(visitor);
+//        park.addVisitor(visitor);
+//        park.addVisitor(visitor);
+//        park.removeVisitor(visitor);
+//        assertEquals(2, park.getVisitorCount());
+//    }
+//}
