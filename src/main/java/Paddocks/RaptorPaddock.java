@@ -1,7 +1,5 @@
 package Paddocks;
 
-import Dinosaurs.Dinosaur;
-
 import java.util.ArrayList;
 
 public class RaptorPaddock extends Paddock {

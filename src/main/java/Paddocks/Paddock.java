@@ -35,14 +35,20 @@ public abstract class Paddock {
         dinosaurList.add(dinosaur);
     }
 
-    public void removeDinosaur(Dinosaur dinosaur) {
+//    To remove any dinosaur - ie pick the first one in the array
+    public Dinosaur removeDinosaur() {
+        return this.dinosaurList.remove(0);
+    }
+
+    public void removeHerbivore(Dinosaur dinosaur) {
+        if (dinosaur.getDietType()==DietType.HERBIVORE)
         this.dinosaurList.remove(dinosaur);
     }
 
-    public boolean findHerbivore(Dinosaur dinosaur) {
-        if (dinosaur.getDietType()==DietType.HERBIVORE);
-            return true;
-        }
+//    public boolean findHerbivore(Dinosaur dinosaur) {
+//        if (dinosaur.getDietType()== DietType.HERBIVORE);
+//            return true;
+//        }
 
 
 }

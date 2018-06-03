@@ -46,7 +46,7 @@ public class RaptorPaddockTest {
     }
 
     @Test
-    public void canNotAddDinosaursToPaddockAtCapacity(){
+    public void canNotAddDinosaursToPaddockIfAtCapacity(){
         raptorPaddock.addDinosaur(velociraptor);
         raptorPaddock.addDinosaur(velociraptor);
         raptorPaddock.addDinosaur(velociraptor);
@@ -59,20 +59,30 @@ public class RaptorPaddockTest {
         raptorPaddock.addDinosaur(velociraptor);
         raptorPaddock.addDinosaur(tyrannosaurus);
         raptorPaddock.addDinosaur(diplodocus);
-        raptorPaddock.removeDinosaur(diplodocus);
+        raptorPaddock.removeDinosaur();
         assertEquals(2, raptorPaddock.dinosaurListCount());
     }
 
+//    The below is not right- I don't want to have to specify the dinosaur.
+
+    @Test
+    public void canRemoveHerbivoreFromPaddock(){
+        raptorPaddock.addDinosaur(tyrannosaurus);
+        raptorPaddock.addDinosaur(diplodocus);
+        raptorPaddock.removeHerbivore(diplodocus);
+        assertEquals(1,raptorPaddock.dinosaurListCount());
+    }
+
+    @Test
+    public void canRemoveHerbivoreFromPaddock_false(){
+        raptorPaddock.addDinosaur(tyrannosaurus);
+        raptorPaddock.addDinosaur(diplodocus);
+        raptorPaddock.removeHerbivore(tyrannosaurus);
+        assertEquals(2,raptorPaddock.dinosaurListCount());
+    }
+
+
 //    **WORK ON THE BELOW**
-//    @Test
-//    public void canFindHerbivore__true(){
-//        assertEquals(true, raptorPaddock.findHerbivore(diplodocus));
-//    }
-//
-//    @Test
-//    public void canFindHerbivore__false(){
-//        assertEquals(false, raptorPaddock.findHerbivore(tyrannosaurus));
-//    }
 
 //
 //
