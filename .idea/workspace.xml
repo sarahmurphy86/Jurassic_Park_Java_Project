@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0dda099-7617-4bea-b62e-235c00b08bd9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Paddocks/Paddock.java" afterPath="$PROJECT_DIR$/src/main/java/Paddocks/Paddock.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/out/test/classes/RaptorPaddockTest.class" afterPath="$PROJECT_DIR$/out/test/classes/RaptorPaddockTest.class" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RaptorPaddockTest.java" afterPath="$PROJECT_DIR$/src/test/java/RaptorPaddockTest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,21 +23,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FoodType.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Dinosaurs/FoodType.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-              <folding>
-                <element signature="e#158#159#0" expanded="true" />
-                <element signature="e#200#201#0" expanded="true" />
-                <element signature="e#231#232#0" expanded="true" />
-                <element signature="e#268#269#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Dinosaur.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Dinosaurs/Dinosaur.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -83,8 +69,8 @@
       <file leaf-file-name="RaptorPaddock.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Paddocks/RaptorPaddock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="120">
+              <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="11" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -92,11 +78,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RaptorPaddockTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DiplodocusPaddock.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Paddocks/DiplodocusPaddock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RaptorPaddockTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/RaptorPaddockTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="49" column="33" lean-forward="false" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
+            <state relative-caret-position="795">
+              <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#815#816#0" expanded="true" />
@@ -496,13 +492,14 @@
         <option value="$PROJECT_DIR$/src/main/java/Paddocks/PaddockA.java" />
         <option value="$PROJECT_DIR$/src/main/java/Paddocks/RaptorPaddock.java" />
         <option value="$PROJECT_DIR$/src/main/java/Dinosaurs/Velociraptor.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RaptorPaddockTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Paddocks/Paddock.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RaptorPaddockTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Paddocks/DiplodocusPaddock.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="56" />
+    <option name="x" value="62" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="709" />
@@ -835,9 +832,6 @@
     <history-entry file="DiplodocusTest_canDecreaseHungerLevel - 2018.06.03 at 10h 56m 46s.xml">
       <configuration name="DiplodocusTest.canDecreaseHungerLevel" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DiplodocusTest_canIncreaseHungerLevel - 2018.06.03 at 10h 56m 01s.xml">
-      <configuration name="DiplodocusTest.canIncreaseHungerLevel" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RaptorPaddockTest_canAddDinosaursToPaddock - 2018.06.03 at 11h 58m 29s.xml">
       <configuration name="RaptorPaddockTest.canAddDinosaursToPaddock" configurationId="JUnit" />
     </history-entry>
@@ -845,6 +839,9 @@
       <configuration name="RaptorPaddockTest.canGetPaddockName" configurationId="JUnit" />
     </history-entry>
     <history-entry file="RaptorPaddockTest_canRemoveDinosaursFromPaddock - 2018.06.03 at 12h 03m 22s.xml">
+      <configuration name="RaptorPaddockTest.canRemoveDinosaursFromPaddock" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RaptorPaddockTest_canRemoveDinosaursFromPaddock - 2018.06.03 at 12h 04m 42s.xml">
       <configuration name="RaptorPaddockTest.canRemoveDinosaursFromPaddock" configurationId="JUnit" />
     </history-entry>
     <history-entry file="RaptorPaddockTest_paddockStartsEmpty - 2018.06.03 at 11h 53m 11s.xml">
@@ -855,8 +852,7 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="56" y="23" width="1280" height="709" extended-state="0" />
-    <editor active="true" />
+    <frame x="62" y="23" width="1280" height="709" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -866,12 +862,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3265306" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3265306" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1130,16 +1126,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Paddocks/RaptorPaddock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Paddocks/Paddock.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -1160,13 +1146,31 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/RaptorPaddockTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="49" column="33" lean-forward="false" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
+        <state relative-caret-position="795">
+          <caret line="53" column="0" lean-forward="false" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#815#816#0" expanded="true" />
             <element signature="e#893#894#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Paddocks/RaptorPaddock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="4" lean-forward="false" selection-start-line="8" selection-start-column="4" selection-end-line="11" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Paddocks/DiplodocusPaddock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
