@@ -75,7 +75,7 @@ public class Park {
 
 
     public void moveHerbivore(Dinosaur dinosaur, Paddock originPaddock, Paddock destinationPaddock) {
-       if(dinosaur.getDietType()==DietType.HERBIVORE){
+       if(dinosaur.getDietType()== DietType.HERBIVORE){
             originPaddock.removeDinosaur();
             destinationPaddock.addDinosaur(dinosaur);
         }

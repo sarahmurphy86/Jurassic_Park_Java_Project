@@ -120,7 +120,7 @@ public class ParkTest {
     }
 
     @Test
-    public void canNotMoveHerbivoreBetweenPaddocks(){
+    public void canNotMoveCarnivoreBetweenPaddocks(){
         park.addPaddock(raptorPaddock);
         park.addPaddock(diplodocusPaddock);
         raptorPaddock.addDinosaur(velociraptor);
