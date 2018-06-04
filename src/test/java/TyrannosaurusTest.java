@@ -42,7 +42,7 @@ public class TyrannosaurusTest {
     }
 
     @Test
-    public void canDecreaseHungerLevel(){
+    public void canEatIfHungry(){
         tyrannosaurus.canFeed(FoodType.DINOBISCUITS);
         assertEquals(2, tyrannosaurus.getHungerLevel());
     }

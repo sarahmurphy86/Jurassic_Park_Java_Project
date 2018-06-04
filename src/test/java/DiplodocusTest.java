@@ -9,12 +9,13 @@ import static org.junit.Assert.assertEquals;
 public class DiplodocusTest {
 
     Diplodocus diplodocus;
+    Diplodocus diplodocus2;
 
     @Before
     public void before() {
 
         diplodocus = new Diplodocus("Dippy", DietType.HERBIVORE, 10, 15.00, 90.00);
-
+        diplodocus2 = new Diplodocus("Dave", DietType.HERBIVORE, 0, 15.00, 90.00);
     }
 
     @Test
@@ -43,10 +44,17 @@ public class DiplodocusTest {
     }
 
     @Test
-    public void canDecreaseHungerLevel(){
+    public void canEatIfHungry(){
         diplodocus.canFeed(FoodType.PLANTS);
         assertEquals(9, diplodocus.getHungerLevel());
     }
+
+    @Test
+    public void canNotEatIfNotHungry(){
+        diplodocus2.canFeed(FoodType.PLANTS);
+        assertEquals(0, diplodocus2.getHungerLevel());
+    }
+
 
 
 }
