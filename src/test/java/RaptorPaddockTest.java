@@ -63,23 +63,32 @@ public class RaptorPaddockTest {
         assertEquals(2, raptorPaddock.dinosaurListCount());
     }
 
-//    The below is not right- I don't want to have to specify the dinosaur.
-
     @Test
-    public void canRemoveHerbivoreFromPaddock(){
+    public void canFindHerbivoreInPaddock(){
+        raptorPaddock.addDinosaur(velociraptor);
         raptorPaddock.addDinosaur(tyrannosaurus);
         raptorPaddock.addDinosaur(diplodocus);
-        raptorPaddock.removeHerbivore(diplodocus);
-        assertEquals(1,raptorPaddock.dinosaurListCount());
+        assertEquals(1, raptorPaddock.findHerbivore());
+
     }
 
-    @Test
-    public void canRemoveHerbivoreFromPaddock_false(){
-        raptorPaddock.addDinosaur(tyrannosaurus);
-        raptorPaddock.addDinosaur(diplodocus);
-        raptorPaddock.removeHerbivore(tyrannosaurus);
-        assertEquals(2,raptorPaddock.dinosaurListCount());
-    }
+    //    The below is not right- I don't want to have to specify the dinosaur.
+
+//    @Test
+//    public void canRemoveHerbivoreFromPaddock(){
+//        raptorPaddock.addDinosaur(tyrannosaurus);
+//        raptorPaddock.addDinosaur(diplodocus);
+//        raptorPaddock.removeHerbivore(diplodocus);
+//        assertEquals(1,raptorPaddock.dinosaurListCount());
+//    }
+//
+//    @Test
+//    public void canRemoveHerbivoreFromPaddock_false(){
+//        raptorPaddock.addDinosaur(tyrannosaurus);
+//        raptorPaddock.addDinosaur(diplodocus);
+//        raptorPaddock.removeHerbivore(tyrannosaurus);
+//        assertEquals(2,raptorPaddock.dinosaurListCount());
+//    }
 
 
 //    **WORK ON THE BELOW**

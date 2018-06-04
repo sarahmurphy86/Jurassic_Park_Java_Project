@@ -8,4 +8,6 @@ public class RaptorPaddock extends Paddock {
         super(name, capacity);
         this.dinosaurList = new ArrayList<>();
     }
+
+
 }
