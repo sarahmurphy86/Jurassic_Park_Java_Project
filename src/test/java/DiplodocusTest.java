@@ -15,7 +15,7 @@ public class DiplodocusTest {
     public void before() {
 
         diplodocus = new Diplodocus("Dippy", DietType.HERBIVORE, 10, 15.00, 90.00);
-        diplodocus2 = new Diplodocus("Dave", DietType.HERBIVORE, 0, 15.00, 90.00);
+        diplodocus2 = new Diplodocus("Dave", DietType.HERBIVORE, 1, 15.00, 90.00);
     }
 
     @Test
@@ -44,16 +44,28 @@ public class DiplodocusTest {
     }
 
     @Test
-    public void canEatIfHungry(){
+    public void canEat(){
         diplodocus.canFeed(FoodType.PLANTS);
         assertEquals(9, diplodocus.getHungerLevel());
     }
 
     @Test
-    public void canNotEatIfNotHungry(){
-        diplodocus2.canFeed(FoodType.PLANTS);
+    public void canNotHaveAMinusHungerValue() {
+        diplodocus2.canFeed(FoodType.DINOBISCUITS);
         assertEquals(0, diplodocus2.getHungerLevel());
     }
+
+
+//    @Test
+//    public void canCheckIfDinosaurIsHungry__true(){
+//        assertEquals(true, diplodocus.hungry());
+//    }
+//
+//    @Test
+//    public void canCheckIfDinosaurIsHungry__false(){
+//        assertEquals(false, diplodocus2.hungry());
+//    }
+
 
 
 
