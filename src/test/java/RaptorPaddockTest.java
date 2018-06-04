@@ -63,14 +63,14 @@ public class RaptorPaddockTest {
         assertEquals(2, raptorPaddock.dinosaurListCount());
     }
 
-    @Test
-    public void canFindHerbivoreInPaddock(){
-        raptorPaddock.addDinosaur(velociraptor);
-        raptorPaddock.addDinosaur(tyrannosaurus);
-        raptorPaddock.addDinosaur(diplodocus);
-        assertEquals(1, raptorPaddock.findHerbivore());
-
-    }
+//    @Test
+//    public void canFindHerbivoreInPaddock(){
+//        raptorPaddock.addDinosaur(velociraptor);
+//        raptorPaddock.addDinosaur(tyrannosaurus);
+//        raptorPaddock.addDinosaur(diplodocus);
+//        assertEquals(1, raptorPaddock.herbivoreListCount());
+//
+//    }
 
     //    The below is not right- I don't want to have to specify the dinosaur.
 

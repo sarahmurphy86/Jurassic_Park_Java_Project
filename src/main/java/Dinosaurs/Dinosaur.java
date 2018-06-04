@@ -8,7 +8,7 @@ public abstract class Dinosaur {
     protected double weightInTonnes;
     protected double lengthInFeet;
 
-    public Dinosaur(String name, DietType dietType, int hungerLevel, double weightInTonnes, double lengthInFeet){
+    public Dinosaur(String name, DietType dietType, int hungerLevel, double weightInTonnes, double lengthInFeet) {
         this.name = name;
         this.dietType = dietType;
         this.hungerLevel = hungerLevel;
@@ -40,6 +40,4 @@ public abstract class Dinosaur {
     public int canFeed(FoodType foodType) {
         return this.hungerLevel -= foodType.getNutriton();
     }
-
 }
-

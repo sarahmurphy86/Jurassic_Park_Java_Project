@@ -42,14 +42,14 @@ public abstract class Paddock {
         return this.dinosaurList.remove(0);
     }
 
-    public int findHerbivore(){
-        for (Dinosaur dinosaur : dinosaurList){
-            if (dinosaur.getDietType()== DietType.HERBIVORE);
-//            this.dinosaurList.remove(dinosaur);
-            this.herbivoreList.add(dinosaur);
-        }
-        return this.herbivoreList.size();
-    }
+//    public int herbivoreListCount(){
+//        for (Dinosaur dinosaur : dinosaurList){
+//            if (dinosaur.getDietType()== DietType.HERBIVORE);
+////            this.dinosaurList.remove(dinosaur);
+//            this.herbivoreList.add(dinosaur);
+//        }
+//        return this.herbivoreList.size();
+//    }
 
 
 //    public void removeHerbivore(Dinosaur dinosaur) {
