@@ -56,13 +56,12 @@ public class Park {
         return this.visitorCapacity;
     }
 
-    public boolean checkIfHerbivore(Dinosaur dinosaur) {
-        if(dinosaur.getDietType() == DietType.HERBIVORE) {
-            return true;
-        }
-        else return false;
-    }
-}
+//    public boolean checkIfHerbivore(Dinosaur dinosaur) {
+//        if(dinosaur.getDietType() == DietType.HERBIVORE) {
+//            return true;
+//        }
+//            else return false;
+//    }
 
 // What dinosaur do you want to move - DietType.HERBIVORE
 // Find what paddock the dinosaur is in - raptorPaddock
@@ -70,23 +69,16 @@ public class Park {
 // Find the correct paddock for the dinosaur - diplodocusPaddock
 // Add the dinosaur to the new paddock (add method)
 
-//
-//    public void moveHerbivore(Dinosaur dinosaur, Paddock originPaddock, Paddock destinationPaddock) {
-////       check if a herbivore - if true then
-////        origin paddock remove dinosaur
-////                destinationPaddock add dinosaur
-////
-//
-//        }
-//    }
+//    check if a herbivore - if true then
+//    origin paddock remove dinosaur
+//    destinationPaddock add dinosaur
 
 
-//    public int herbivoreListCount(){
-////        for (Dinosaur dinosaur : dinosaurList){
-////            if (dinosaur.getDietType()== DietType.HERBIVORE);
-//////            this.dinosaurList.remove(dinosaur);
-////            this.herbivoreList.add(dinosaur);
-////        }
-////        return this.herbivoreList.size();
-////    }
-//}
+    public void moveHerbivore(Dinosaur dinosaur, Paddock originPaddock, Paddock destinationPaddock) {
+       if(dinosaur.getDietType()==DietType.HERBIVORE){
+            originPaddock.removeDinosaur();
+            destinationPaddock.addDinosaur(dinosaur);
+        }
+    }
+}
+

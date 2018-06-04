@@ -36,7 +36,7 @@ public class ParkTest {
 
     @Test
     public void canGetVisitorCapacity(){
-        assertEquals(2, park.getVisitorCapacity());
+        assertEquals(3, park.getVisitorCapacity());
     }
 
     @Test
@@ -96,28 +96,40 @@ public class ParkTest {
         assertEquals(1, park.getPaddockCount());
     }
 
-    @Test
-    public void checkIfHerbivore__true(){
-        diplodocusPaddock.addDinosaur(diplodocus);
-        assertEquals(true, park.checkIfHerbivore(diplodocus));
-    }
-
-    @Test
-    public void checkIfHerbivore__false(){
-        raptorPaddock.addDinosaur(velociraptor);
-        assertEquals(false, park.checkIfHerbivore(velociraptor));
-    }
-
 //    @Test
-//    public void canMoveHerbivoreBetweenPaddocks(){
-//        park.addPaddock(raptorPaddock);
-//        park.addPaddock(diplodocusPaddock);
-//        raptorPaddock.addDinosaur(velociraptor);
-//        raptorPaddock.addDinosaur(diplodocus);
-//        park.moveHerbivore();
-//        assertEquals(1, raptorPaddock.dinosaurListCount());
-//        assertEquals(1,diplodocusPaddock.dinosaurListCount());
+//    public void checkIfHerbivore__true(){
+//        diplodocusPaddock.addDinosaur(diplodocus);
+//        assertEquals(true, park.checkIfHerbivore(diplodocus));
 //    }
+//
+//    @Test
+//    public void checkIfHerbivore__false(){
+//        raptorPaddock.addDinosaur(velociraptor);
+//        assertEquals(false, park.checkIfHerbivore(velociraptor));
+//    }
+
+    @Test
+    public void canMoveHerbivoreBetweenPaddocks(){
+        park.addPaddock(raptorPaddock);
+        park.addPaddock(diplodocusPaddock);
+        raptorPaddock.addDinosaur(velociraptor);
+        raptorPaddock.addDinosaur(diplodocus);
+        park.moveHerbivore(diplodocus, raptorPaddock, diplodocusPaddock);
+        assertEquals(1, raptorPaddock.dinosaurListCount());
+        assertEquals(1,diplodocusPaddock.dinosaurListCount());
+    }
+
+    @Test
+    public void canNotMoveHerbivoreBetweenPaddocks(){
+        park.addPaddock(raptorPaddock);
+        park.addPaddock(diplodocusPaddock);
+        raptorPaddock.addDinosaur(velociraptor);
+        raptorPaddock.addDinosaur(diplodocus);
+        park.moveHerbivore(velociraptor, raptorPaddock, diplodocusPaddock);
+        assertEquals(2, raptorPaddock.dinosaurListCount());
+        assertEquals(0, diplodocusPaddock.dinosaurListCount());
+    }
+
 
 }
 

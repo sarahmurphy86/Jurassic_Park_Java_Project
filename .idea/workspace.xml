@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e0dda099-7617-4bea-b62e-235c00b08bd9" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Dinosaurs/Dinosaur.java" afterPath="$PROJECT_DIR$/src/main/java/Dinosaurs/Dinosaur.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Paddocks/Paddock.java" afterPath="$PROJECT_DIR$/src/main/java/Paddocks/Paddock.java" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Park/Park.java" afterPath="$PROJECT_DIR$/src/main/java/Park/Park.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ParkTest.java" afterPath="$PROJECT_DIR$/src/test/java/ParkTest.java" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RaptorPaddockTest.java" afterPath="$PROJECT_DIR$/src/test/java/RaptorPaddockTest.java" />
@@ -18,6 +15,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Jurassic_Park_Java_Project$ParkTest_canNotMoveHerbivoreBetweenPaddocks.coverage" NAME="ParkTest.canNotMoveHerbivoreBetweenPaddocks Coverage Results" MODIFIED="1528116127921" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
@@ -52,8 +52,8 @@
       <file leaf-file-name="RaptorPaddockTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/RaptorPaddockTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1135">
-              <caret line="87" column="10" lean-forward="false" selection-start-line="87" selection-start-column="10" selection-end-line="87" selection-end-column="48" />
+            <state relative-caret-position="-557">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#754#755#0" expanded="true" />
@@ -65,31 +65,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Tyrannosaurus.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Dinosaurs/Tyrannosaurus.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="5" lean-forward="true" selection-start-line="2" selection-start-column="27" selection-end-line="6" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Velociraptor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Dinosaurs/Velociraptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="ParkTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ParkTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="279">
-              <caret line="112" column="41" lean-forward="true" selection-start-line="112" selection-start-column="41" selection-end-line="112" selection-end-column="41" />
+            <state relative-caret-position="-1031">
+              <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#959#960#0" expanded="true" />
@@ -105,11 +85,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FoodType.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FoodType.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Dinosaurs/FoodType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
+            <state relative-caret-position="225">
+              <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DiplodocusPaddockTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/DiplodocusPaddockTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+              <folding>
+                <element signature="e#544#545#0" expanded="true" />
+                <element signature="e#629#630#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DiplodocusTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/DiplodocusTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="91">
+              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -138,7 +141,7 @@
       <file leaf-file-name="TyrannosaurusTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TyrannosaurusTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="-269">
               <caret line="14" column="71" lean-forward="true" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -157,11 +160,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Park.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Park.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Park/Park.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="62" column="26" lean-forward="true" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+            <state relative-caret-position="51">
+              <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#716#717#0" expanded="true" />
@@ -508,16 +511,16 @@
         <option value="$PROJECT_DIR$/src/test/java/DiplodocusPaddockTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/TyrannosaurusTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Paddocks/RaptorPaddock.java" />
-        <option value="$PROJECT_DIR$/src/test/java/RaptorPaddockTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Paddocks/Paddock.java" />
         <option value="$PROJECT_DIR$/src/main/java/Dinosaurs/Dinosaur.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ParkTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RaptorPaddockTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Park/Park.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ParkTest.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-71" />
+    <option name="x" value="379" />
     <option name="y" value="23" />
     <option name="width" value="1280" />
     <option name="height" value="709" />
@@ -567,14 +570,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Jurassic Park Java Project" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jurassic_park_java_project" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Dinosaurs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Jurassic Park Java Project" type="b2602c69:ProjectViewProjectNode" />
@@ -639,7 +634,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ParkTest.checkIfHerbivore__false">
+  <component name="RunManager" selected="JUnit.All in Jurassic_Park_Java_Project_test">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -661,15 +656,15 @@
       <module name="" />
       <envs />
     </configuration>
-    <configuration name="ParkTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in Jurassic_Park_Java_Project_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Jurassic_Park_Java_Project_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ParkTest" />
+      <option name="MAIN_CLASS_NAME" />
       <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -701,14 +696,14 @@
       <envs />
       <patterns />
     </configuration>
-    <configuration name="ParkTest.canNotAddPaddocksIfAtCapacity" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParkTest.canNotMoveHerbivoreBetweenPaddocks" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Jurassic_Park_Java_Project_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ParkTest" />
-      <option name="METHOD_NAME" value="canNotAddPaddocksIfAtCapacity" />
+      <option name="METHOD_NAME" value="canNotMoveHerbivoreBetweenPaddocks" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -822,19 +817,19 @@
       <predefined_log_file id="idea.log" enabled="true" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.ParkTest.canNotAddPaddocksIfAtCapacity" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.ParkTest.canMoveHerbivoreBetweenPaddocks" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.ParkTest.checkIfHerbivore__true" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.ParkTest.checkIfHerbivore__false" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.ParkTest" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.ParkTest.canMoveHerbivoreBetweenPaddocks" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.ParkTest.checkIfHerbivore__true" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.ParkTest.checkIfHerbivore__false" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.ParkTest.canNotMoveHerbivoreBetweenPaddocks" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.All in Jurassic_Park_Java_Project_test" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.ParkTest.checkIfHerbivore__false" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.ParkTest.checkIfHerbivore__true" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.ParkTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.ParkTest.canMoveHerbivoreBetweenPaddocks" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.ParkTest.canNotAddPaddocksIfAtCapacity" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.All in Jurassic_Park_Java_Project_test" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.ParkTest.canNotMoveHerbivoreBetweenPaddocks" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.ParkTest.canMoveHerbivoreBetweenPaddocks" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.ParkTest.checkIfHerbivore__false" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.ParkTest.checkIfHerbivore__true" />
       </list>
     </recent_temporary>
   </component>
@@ -855,35 +850,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ParkTest - 2018.06.04 at 12h 11m 24s.xml">
-      <configuration name="ParkTest" configurationId="JUnit" />
+    <history-entry file="All_in_Jurassic_Park_Java_Project_test - 2018.06.04 at 13h 44m 03s.xml">
+      <configuration name="All in Jurassic_Park_Java_Project_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParkTest_checkIfHerbivore__false - 2018.06.04 at 12h 05m 02s.xml">
-      <configuration name="ParkTest.checkIfHerbivore__false" configurationId="JUnit" />
+    <history-entry file="All_in_Jurassic_Park_Java_Project_test - 2018.06.04 at 13h 44m 29s.xml">
+      <configuration name="All in Jurassic_Park_Java_Project_test" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParkTest_checkIfHerbivore__false - 2018.06.04 at 12h 07m 39s.xml">
-      <configuration name="ParkTest.checkIfHerbivore__false" configurationId="JUnit" />
+    <history-entry file="ParkTest_canMoveHerbivoreBetweenPaddocks - 2018.06.04 at 13h 33m 56s.xml">
+      <configuration name="ParkTest.canMoveHerbivoreBetweenPaddocks" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParkTest_checkIfHerbivore__false - 2018.06.04 at 12h 10m 13s.xml">
-      <configuration name="ParkTest.checkIfHerbivore__false" configurationId="JUnit" />
+    <history-entry file="ParkTest_canMoveHerbivoreBetweenPaddocks - 2018.06.04 at 13h 34m 34s.xml">
+      <configuration name="ParkTest.canMoveHerbivoreBetweenPaddocks" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParkTest_checkIfHerbivore__false - 2018.06.04 at 12h 12m 08s.xml">
-      <configuration name="ParkTest.checkIfHerbivore__false" configurationId="JUnit" />
+    <history-entry file="ParkTest_canMoveHerbivoreBetweenPaddocks - 2018.06.04 at 13h 34m 48s.xml">
+      <configuration name="ParkTest.canMoveHerbivoreBetweenPaddocks" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParkTest_checkIfHerbivore__false - 2018.06.04 at 12h 17m 57s.xml">
-      <configuration name="ParkTest.checkIfHerbivore__false" configurationId="JUnit" />
+    <history-entry file="ParkTest_canNotMoveHerbivoreBetweenPaddocks - 2018.06.04 at 13h 38m 59s.xml">
+      <configuration name="ParkTest.canNotMoveHerbivoreBetweenPaddocks" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParkTest_checkIfHerbivore__false - 2018.06.04 at 12h 19m 45s.xml">
-      <configuration name="ParkTest.checkIfHerbivore__false" configurationId="JUnit" />
+    <history-entry file="ParkTest_canNotMoveHerbivoreBetweenPaddocks - 2018.06.04 at 13h 39m 30s.xml">
+      <configuration name="ParkTest.canNotMoveHerbivoreBetweenPaddocks" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParkTest_checkIfHerbivore__false - 2018.06.04 at 12h 19m 50s.xml">
-      <configuration name="ParkTest.checkIfHerbivore__false" configurationId="JUnit" />
+    <history-entry file="ParkTest_canNotMoveHerbivoreBetweenPaddocks - 2018.06.04 at 13h 39m 37s.xml">
+      <configuration name="ParkTest.canNotMoveHerbivoreBetweenPaddocks" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParkTest_checkIfHerbivore__true - 2018.06.04 at 12h 04m 57s.xml">
-      <configuration name="ParkTest.checkIfHerbivore__true" configurationId="JUnit" />
+    <history-entry file="ParkTest_canNotMoveHerbivoreBetweenPaddocks - 2018.06.04 at 13h 40m 00s.xml">
+      <configuration name="ParkTest.canNotMoveHerbivoreBetweenPaddocks" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParkTest_checkIfHerbivore__true - 2018.06.04 at 12h 17m 52s.xml">
-      <configuration name="ParkTest.checkIfHerbivore__true" configurationId="JUnit" />
+    <history-entry file="ParkTest_canNotMoveHerbivoreBetweenPaddocks - 2018.06.04 at 13h 42m 09s.xml">
+      <configuration name="ParkTest.canNotMoveHerbivoreBetweenPaddocks" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -900,6 +895,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33594978" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1044,9 +1040,9 @@
         <state relative-caret-position="225">
           <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#544#545#0" expanded="false" />
-            <element signature="e#629#630#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#629#630#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1056,7 +1052,7 @@
         <state relative-caret-position="360">
           <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="e#407#408#0" expanded="false" />
             <element signature="e#466#467#0" expanded="false" />
             <element signature="e#512#513#0" expanded="false" />
@@ -1199,7 +1195,7 @@
         <state relative-caret-position="615">
           <caret line="57" column="1" lean-forward="true" selection-start-line="57" selection-start-column="1" selection-end-line="57" selection-end-column="1" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="e#407#408#0" expanded="false" />
             <element signature="e#466#467#0" expanded="false" />
             <element signature="e#512#513#0" expanded="false" />
@@ -1237,38 +1233,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/DiplodocusTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="292">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#407#408#0" expanded="false" />
-            <element signature="e#466#467#0" expanded="false" />
-            <element signature="e#512#513#0" expanded="false" />
-            <element signature="e#586#587#0" expanded="false" />
-            <element signature="e#635#636#0" expanded="false" />
-            <element signature="e#696#697#0" expanded="false" />
-            <element signature="e#739#740#0" expanded="false" />
-            <element signature="e#809#810#0" expanded="false" />
-            <element signature="e#858#859#0" expanded="false" />
-            <element signature="e#926#927#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/DiplodocusPaddockTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="17" column="83" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="83" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#544#545#0" expanded="false" />
-            <element signature="e#629#630#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Dinosaurs/DietType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1290,26 +1254,6 @@
         <state relative-caret-position="30">
           <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TyrannosaurusTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="14" column="71" lean-forward="true" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-            <element signature="e#485#486#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-            <element signature="e#608#609#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-            <element signature="e#720#721#0" expanded="true" />
-            <element signature="e#763#764#0" expanded="true" />
-            <element signature="e#836#837#0" expanded="true" />
-            <element signature="e#885#886#0" expanded="true" />
-            <element signature="e#956#957#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1339,17 +1283,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/RaptorPaddockTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Dinosaurs/FoodType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1135">
-          <caret line="87" column="10" lean-forward="false" selection-start-line="87" selection-start-column="10" selection-end-line="87" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#754#755#0" expanded="true" />
-            <element signature="e#832#833#0" expanded="true" />
-            <element signature="e#884#885#0" expanded="true" />
-            <element signature="e#951#952#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="225">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1374,10 +1312,81 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/TyrannosaurusTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-269">
+          <caret line="14" column="71" lean-forward="true" selection-start-line="14" selection-start-column="71" selection-end-line="14" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#423#424#0" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
+            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#608#609#0" expanded="true" />
+            <element signature="e#657#658#0" expanded="true" />
+            <element signature="e#720#721#0" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
+            <element signature="e#836#837#0" expanded="true" />
+            <element signature="e#885#886#0" expanded="true" />
+            <element signature="e#956#957#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RaptorPaddockTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-557">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#754#755#0" expanded="true" />
+            <element signature="e#832#833#0" expanded="true" />
+            <element signature="e#884#885#0" expanded="true" />
+            <element signature="e#951#952#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/DiplodocusTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="91">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/DiplodocusPaddockTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="21" column="35" lean-forward="false" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
+          <folding>
+            <element signature="e#544#545#0" expanded="true" />
+            <element signature="e#629#630#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ParkTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1031">
+          <caret line="39" column="5" lean-forward="true" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#959#960#0" expanded="true" />
+            <element signature="e#1020#1021#0" expanded="true" />
+            <element signature="e#1072#1073#0" expanded="true" />
+            <element signature="e#1130#1131#0" expanded="true" />
+            <element signature="e#1184#1185#0" expanded="true" />
+            <element signature="e#1239#1240#0" expanded="true" />
+            <element signature="e#1925#1926#0" expanded="true" />
+            <element signature="e#1980#1981#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Park/Park.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="62" column="26" lean-forward="true" selection-start-line="62" selection-start-column="26" selection-end-line="62" selection-end-column="26" />
+        <state relative-caret-position="51">
+          <caret line="64" column="0" lean-forward="true" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#716#717#0" expanded="true" />
@@ -1393,32 +1402,6 @@
             <element signature="e#1448#1449#0" expanded="true" />
             <element signature="e#1491#1492#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ParkTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="279">
-          <caret line="112" column="41" lean-forward="true" selection-start-line="112" selection-start-column="41" selection-end-line="112" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#959#960#0" expanded="true" />
-            <element signature="e#1020#1021#0" expanded="true" />
-            <element signature="e#1072#1073#0" expanded="true" />
-            <element signature="e#1130#1131#0" expanded="true" />
-            <element signature="e#1184#1185#0" expanded="true" />
-            <element signature="e#1239#1240#0" expanded="true" />
-            <element signature="e#1925#1926#0" expanded="true" />
-            <element signature="e#1980#1981#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Dinosaurs/FoodType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="15" lean-forward="true" selection-start-line="5" selection-start-column="15" selection-end-line="5" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
