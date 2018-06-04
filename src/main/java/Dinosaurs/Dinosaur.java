@@ -49,56 +49,9 @@ public abstract class Dinosaur {
                 }
                 return this.hungerLevel;
         }
-    }
-
-//        else /* if (newHunger < 0) */ {
-//            this.hungerLevel = 0;
-//            return this.hungerLevel;
-//        }
+}
 
 
-//
-//        // new new new
-//        int newHunger = this.hungerLevel - foodType.getNutriton();
-//
-//
-//
-//
-//        // original
-//        if (hungerLevel > 0) {
-//            return this.hungerLevel -= foodType.getNutriton();
-//        }
-//        else {
-////            Do nothing
-//            return this.hungerLevel;
-//        }
-//        // ///
-//
-//        // new
-//        int newHunger = this.hungerLevel - foodType.getNutriton();
-//
-//        if (newHunger >= 0) {
-//            this.hungerLevel = newHunger;
-//            return this.hungerLevel;
-//        }
-//        else /* if (newHunger < 0) */ {
-//            this.hungerLevel = 0;
-//            return this.hungerLevel;
-//        }
-        // ///
-//    }
-
-//    public boolean hungry() {
-//        if (hungerLevel > 0 && hungerLevel <= 10)
-//            return true;
-//        else return false;
-//    }
-
-//    public int canFeed(Dinosaur dinosaur, FoodType foodType) {
-//        if (dinosaur.hungry == true) ;
-//
-//
-//    }
 
 
 

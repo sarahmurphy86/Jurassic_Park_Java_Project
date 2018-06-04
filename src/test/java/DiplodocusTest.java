@@ -10,6 +10,7 @@ public class DiplodocusTest {
 
     Diplodocus diplodocus;
     Diplodocus diplodocus2;
+    Diplodocus diplodocus3;
 
     @Before
     public void before() {
@@ -56,15 +57,6 @@ public class DiplodocusTest {
     }
 
 
-//    @Test
-//    public void canCheckIfDinosaurIsHungry__true(){
-//        assertEquals(true, diplodocus.hungry());
-//    }
-//
-//    @Test
-//    public void canCheckIfDinosaurIsHungry__false(){
-//        assertEquals(false, diplodocus2.hungry());
-//    }
 
 
 

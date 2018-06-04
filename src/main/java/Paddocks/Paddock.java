@@ -10,14 +10,14 @@ import java.util.ArrayList;
 public abstract class Paddock {
     protected String name;
     protected int capacity;
-    protected ArrayList<Dinosaur> dinosaurList;
-    protected ArrayList<Dinosaur> herbivoreList;
+    public ArrayList<Dinosaur> dinosaurList;
+
 
     public Paddock(String name, int capacity){
         this.name = name;
         this.capacity = capacity;
         this.dinosaurList = new ArrayList<>();
-        this.herbivoreList = new ArrayList<>();
+
     }
 
     public String getPaddockName() {
@@ -32,9 +32,17 @@ public abstract class Paddock {
         return this.dinosaurList.size();
     }
 
+//    public void addDinosaur(Dinosaur dinosaur){
+//       if (this.dinosaurList.size()< this.capacity)
+//        dinosaurList.add(dinosaur);
+//    }
+
     public void addDinosaur(Dinosaur dinosaur){
-       if (this.dinosaurList.size()< this.capacity)
-        dinosaurList.add(dinosaur);
+        if (this.dinosaurList.size()== 0)
+            dinosaurList.add(dinosaur);
+        else if ((this.dinosaurList.size()< this.capacity) && (dinosaurList.get(0).getDietType() == dinosaur.getDietType()))
+            dinosaurList.add(dinosaur);
+        else return;
     }
 
 //    To remove any dinosaur - ie pick the first one in the array

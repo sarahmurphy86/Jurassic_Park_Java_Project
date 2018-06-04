@@ -28,4 +28,10 @@ public class DiplodocusPaddockTest {
         assertEquals(0, diplodocusPaddock.dinosaurListCount());
 
     }
+    @Test
+    public void canAddDinosaursToPaddock(){
+        diplodocusPaddock.addDinosaur(diplodocus);
+        assertEquals(1, diplodocusPaddock.dinosaurListCount());
+        assertEquals("Dippy", diplodocusPaddock.dinosaurList.get(0).getName());
+    }
 }

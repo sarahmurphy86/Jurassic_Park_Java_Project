@@ -42,6 +42,7 @@ public class RaptorPaddockTest {
     public void canAddDinosaursToPaddock(){
         raptorPaddock.addDinosaur(velociraptor);
         raptorPaddock.addDinosaur(tyrannosaurus);
+        raptorPaddock.addDinosaur(diplodocus);
         assertEquals(2, raptorPaddock.dinosaurListCount());
     }
 
@@ -60,7 +61,9 @@ public class RaptorPaddockTest {
         raptorPaddock.addDinosaur(tyrannosaurus);
         raptorPaddock.addDinosaur(diplodocus);
         raptorPaddock.removeDinosaur();
-        assertEquals(2, raptorPaddock.dinosaurListCount());
+        assertEquals(1, raptorPaddock.dinosaurListCount());
     }
+
+
 
 }
