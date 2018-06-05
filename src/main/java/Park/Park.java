@@ -3,7 +3,6 @@ package Park;
 import Dinosaurs.DietType;
 import Dinosaurs.Dinosaur;
 import Paddocks.Paddock;
-import Paddocks.RaptorPaddock;
 import Visitors.Visitor;
 
 import java.util.ArrayList;
@@ -64,15 +63,10 @@ public class Park {
 //    }
 
 // What dinosaur do you want to move - DietType.HERBIVORE
-// Find what paddock the dinosaur is in - raptorPaddock
-// Take the dinosaur out of that paddock (remove method)
-// Find the correct paddock for the dinosaur - diplodocusPaddock
-// Add the dinosaur to the new paddock (add method)
-
-//    check if a herbivore - if true then
-//    origin paddock remove dinosaur
-//    destinationPaddock add dinosaur
-
+// Find what paddock the dinosaur is in - originPaddock
+// What paddock do you want to move the dinosaur to - destinationPaddock
+// Take the dinosaur out of origin paddock (remove method)
+// Add the dinosaur to the destination paddock (add method)
 
     public void moveHerbivore(Dinosaur dinosaur, Paddock originPaddock, Paddock destinationPaddock) {
        if(dinosaur.getDietType()== DietType.HERBIVORE){

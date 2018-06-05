@@ -1,10 +1,6 @@
 package Paddocks;
 
-import Dinosaurs.DietType;
 import Dinosaurs.Dinosaur;
-import Dinosaurs.Diplodocus;
-
-
 import java.util.ArrayList;
 
 public abstract class Paddock {
@@ -32,11 +28,20 @@ public abstract class Paddock {
         return this.dinosaurList.size();
     }
 
+// Add Dinosaur method - version 1
+
+//    public void addDinosaur(Dinosaur dinosaur){
+//        dinosaurList.add(dinosaur);
+//    }
+
+//Add Dinosaur method-version 2
+
 //    public void addDinosaur(Dinosaur dinosaur){
 //       if (this.dinosaurList.size()< this.capacity)
 //        dinosaurList.add(dinosaur);
 //    }
 
+//Add Dinosaur method - version 3
     public void addDinosaur(Dinosaur dinosaur){
         if (this.dinosaurList.size()== 0)
             dinosaurList.add(dinosaur);

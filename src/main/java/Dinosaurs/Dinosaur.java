@@ -46,9 +46,9 @@ public abstract class Dinosaur {
 
             else if (newHunger >= 0) {
                 this.hungerLevel = newHunger;
-                }
+            }
                 return this.hungerLevel;
-        }
+    }
 }
 
 
