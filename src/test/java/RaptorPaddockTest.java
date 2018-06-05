@@ -12,6 +12,8 @@ public class RaptorPaddockTest {
     Velociraptor velociraptor;
     Tyrannosaurus tyrannosaurus;
     Diplodocus diplodocus;
+    Triceretops triceretops;
+
 
 
     @Before
@@ -19,7 +21,6 @@ public class RaptorPaddockTest {
         raptorPaddock = new RaptorPaddock("Raptor Kingdom", 3);
         velociraptor = new Velociraptor("Vanessa", DietType.CARNIVORE,SpeciesType.VELOCIRAPTOR,9,0.02,6.80);
         tyrannosaurus = new Tyrannosaurus("Teddy", DietType.CARNIVORE,SpeciesType.TYRANNOSAURUS,5,10.00,40.00);
-        diplodocus = new Diplodocus("Dippy", DietType.HERBIVORE, SpeciesType.DIPLODOCUS, 10, 15.00,90.00);
     }
 
     @Test
@@ -35,15 +36,20 @@ public class RaptorPaddockTest {
     @Test
     public void paddockStartsEmpty() {
         assertEquals(0, raptorPaddock.dinosaurListCount());
-
     }
 
     @Test
-    public void canAddDinosaursToPaddock(){
+    public void canAddDinosaursToPaddockIfSameSpecies() {
+        raptorPaddock.addDinosaur(velociraptor);
+        raptorPaddock.addDinosaur(velociraptor);
+        assertEquals(2, raptorPaddock.dinosaurListCount());
+    }
+
+    @Test
+    public void canNotAddDinosaursToPaddockIfNotSameSpecies(){
         raptorPaddock.addDinosaur(velociraptor);
         raptorPaddock.addDinosaur(tyrannosaurus);
-        raptorPaddock.addDinosaur(diplodocus);
-        assertEquals(2, raptorPaddock.dinosaurListCount());
+        assertEquals(1, raptorPaddock.dinosaurListCount());
     }
 
     @Test
@@ -58,8 +64,7 @@ public class RaptorPaddockTest {
     @Test
     public void canRemoveDinosaursFromPaddock(){
         raptorPaddock.addDinosaur(velociraptor);
-        raptorPaddock.addDinosaur(tyrannosaurus);
-        raptorPaddock.addDinosaur(diplodocus);
+        raptorPaddock.addDinosaur(velociraptor);
         raptorPaddock.removeDinosaur();
         assertEquals(1, raptorPaddock.dinosaurListCount());
     }

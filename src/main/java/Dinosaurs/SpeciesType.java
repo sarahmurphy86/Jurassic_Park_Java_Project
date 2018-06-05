@@ -4,6 +4,5 @@ public enum SpeciesType {
     TYRANNOSAURUS,
     VELOCIRAPTOR,
     DIPLODOCUS,
-    TRICERATOPS;
-
+    TRICERATOPS
 }

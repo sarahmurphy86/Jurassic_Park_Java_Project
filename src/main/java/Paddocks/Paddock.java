@@ -1,7 +1,12 @@
 package Paddocks;
 
+import Dinosaurs.DietType;
 import Dinosaurs.Dinosaur;
+import Dinosaurs.SpeciesType;
+
 import java.util.ArrayList;
+
+import static Dinosaurs.DietType.HERBIVORE;
 
 public abstract class Paddock {
     protected String name;
@@ -42,18 +47,35 @@ public abstract class Paddock {
 //    }
 
 //Add Dinosaur method - version 3
+//    public void addDinosaur(Dinosaur dinosaur){
+//        if (this.dinosaurList.size()== 0)
+//            dinosaurList.add(dinosaur);
+//        else if ((this.dinosaurList.size()< this.capacity) && (dinosaurList.get(0).getDietType() == dinosaur.getDietType()))
+//            dinosaurList.add(dinosaur);
+//        else return;
+//    }
+
+//Add Dinosaur method - version 4
     public void addDinosaur(Dinosaur dinosaur){
-        if (this.dinosaurList.size()== 0)
+        if (this.dinosaurList.size()== 0){
             dinosaurList.add(dinosaur);
-        else if ((this.dinosaurList.size()< this.capacity) && (dinosaurList.get(0).getDietType() == dinosaur.getDietType()))
+        }
+
+        else if ((this.dinosaurList.size()< this.capacity) && (dinosaurList.get(0).getDietType() == DietType.HERBIVORE)  &&
+                (dinosaur.getDietType() != DietType.CARNIVORE)){
             dinosaurList.add(dinosaur);
-        else return;
-    }
+        }
+
+        else if ((this.dinosaurList.size()< this.capacity) && (dinosaurList.get(0).getSpeciesType() == dinosaur.getSpeciesType())) {
+            dinosaurList.add(dinosaur);
+        }
+   }
 
 //    To remove any dinosaur - ie pick the first one in the array
-    public Dinosaur removeDinosaur() {
+    public Dinosaur removeDinosaur(){
         return this.dinosaurList.remove(0);
     }
+
 
 //    public int herbivoreListCount(){
 //        for (Dinosaur dinosaur : dinosaurList){
@@ -77,6 +99,8 @@ public abstract class Paddock {
 
 
 }
+
+
 
 
 
