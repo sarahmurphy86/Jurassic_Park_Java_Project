@@ -122,15 +122,27 @@ public class ParkTest {
         assertEquals(1, diplodocusPaddock.dinosaurListCount());
     }
 
+//    Dinosaur disappears - i.e. it cant be added to to the raptorPaddock because there is a Velocirapor in there, but doesn't stay in the holdingPaddock.
     @Test
-    public void canNotMoveCarnivoreBetweenPaddocks(){
+    public void canNotMoveHerbivoreIfCarnivorePresent(){
         park.addPaddock(raptorPaddock);
         park.addPaddock(holdingPaddock);
         raptorPaddock.addDinosaur(velociraptor);
-        raptorPaddock.addDinosaur(velociraptor);
-        park.moveHerbivore(velociraptor, raptorPaddock, holdingPaddock);
-        assertEquals(2, raptorPaddock.dinosaurListCount());
-        assertEquals(0, holdingPaddock.dinosaurListCount());
+        holdingPaddock.addDinosaur(diplodocus);
+        park.moveHerbivore(diplodocus, holdingPaddock, raptorPaddock);
+        assertEquals(1, raptorPaddock.dinosaurListCount());
+        assertEquals(1, holdingPaddock.dinosaurListCount());
+    }
+
+    @Test
+    public void canMoveVelociraptorSpeciesBetweenPaddocks(){
+        park.addPaddock(holdingPaddock);
+        park.addPaddock(raptorPaddock);
+        holdingPaddock.addDinosaur(velociraptor);
+        holdingPaddock.addDinosaur(velociraptor);
+        park.moveVelociraptor(velociraptor,holdingPaddock,raptorPaddock);
+        assertEquals(1, raptorPaddock.dinosaurListCount());
+        assertEquals(1, holdingPaddock.dinosaurListCount());
     }
 
 

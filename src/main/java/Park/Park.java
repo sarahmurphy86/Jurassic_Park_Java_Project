@@ -2,7 +2,11 @@ package Park;
 
 import Dinosaurs.DietType;
 import Dinosaurs.Dinosaur;
+import Dinosaurs.SpeciesType;
+import Dinosaurs.Velociraptor;
+import Paddocks.HoldingPaddock;
 import Paddocks.Paddock;
+import Paddocks.RaptorPaddock;
 import Visitors.Visitor;
 
 import java.util.ArrayList;
@@ -68,8 +72,30 @@ public class Park {
 // Take the dinosaur out of origin paddock (remove method)
 // Add the dinosaur to the destination paddock (add method)
 
+//    public void moveHerbivore(Dinosaur dinosaur, Paddock originPaddock, Paddock destinationPaddock) {
+//       if(dinosaur.getDietType()== DietType.HERBIVORE){
+//            originPaddock.removeDinosaur();
+//            destinationPaddock.addDinosaur(dinosaur);
+//        }
+//    }
     public void moveHerbivore(Dinosaur dinosaur, Paddock originPaddock, Paddock destinationPaddock) {
-       if(dinosaur.getDietType()== DietType.HERBIVORE){
+        if(dinosaur.getDietType()== DietType.HERBIVORE) {
+            originPaddock.removeDinosaur();
+        }
+        if (destinationPaddock.dinosaurList.size()== 0){
+            destinationPaddock.addDinosaur(dinosaur);
+        }
+
+        else if (destinationPaddock.dinosaurList.get(0).getDietType() == DietType.HERBIVORE) {
+            destinationPaddock.addDinosaur(dinosaur);
+        }
+        else if(destinationPaddock.dinosaurList.get(0).getDietType() != DietType.HERBIVORE){
+            originPaddock.addDinosaur(dinosaur);
+        }
+    }
+
+    public void moveVelociraptor(Dinosaur dinosaur, Paddock originPaddock, Paddock destinationPaddock) {
+        if(dinosaur.getSpeciesType()== SpeciesType.VELOCIRAPTOR){
             originPaddock.removeDinosaur();
             destinationPaddock.addDinosaur(dinosaur);
         }

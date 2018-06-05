@@ -69,6 +69,7 @@ public abstract class Paddock {
         else if ((this.dinosaurList.size()< this.capacity) && (dinosaurList.get(0).getSpeciesType() == dinosaur.getSpeciesType())) {
             dinosaurList.add(dinosaur);
         }
+        else return;
    }
 
 //    To remove any dinosaur - ie pick the first one in the array

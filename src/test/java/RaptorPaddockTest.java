@@ -11,9 +11,6 @@ public class RaptorPaddockTest {
     RaptorPaddock raptorPaddock;
     Velociraptor velociraptor;
     Tyrannosaurus tyrannosaurus;
-    Diplodocus diplodocus;
-    Triceretops triceretops;
-
 
 
     @Before
