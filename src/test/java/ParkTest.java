@@ -1,6 +1,4 @@
-import Dinosaurs.DietType;
-import Dinosaurs.Diplodocus;
-import Dinosaurs.Velociraptor;
+import Dinosaurs.*;
 import Paddocks.DiplodocusPaddock;
 import Paddocks.HoldingPaddock;
 import Paddocks.RaptorPaddock;
@@ -20,15 +18,17 @@ public class ParkTest {
     Visitor visitor;
     Diplodocus diplodocus;
     Velociraptor velociraptor;
+    Tyrannosaurus tyrannosaurus;
 
     @Before
     public void before(){
         park = new Park("Jurassic Park",3, 2);
         raptorPaddock = new RaptorPaddock("Raptor Kingdom", 3);
-        velociraptor = new Velociraptor("Vanessa", DietType.CARNIVORE, 9, 0.02, 6.8);
         diplodocusPaddock = new DiplodocusPaddock("Diplodocus Heaven", 10);
-        diplodocus = new Diplodocus("Dippy", DietType.HERBIVORE, 10, 15.00, 90.00);
         holdingPaddock = new HoldingPaddock("Herbivore Safety", 5);
+        velociraptor = new Velociraptor("Vanessa", DietType.CARNIVORE, SpeciesType.VELOCIRAPTOR,9,0.02,6.80);
+        tyrannosaurus = new Tyrannosaurus("Teddy", DietType.CARNIVORE,SpeciesType.TYRANNOSAURUS,5,10.00,40.00);
+        diplodocus = new Diplodocus("Dippy", DietType.HERBIVORE, SpeciesType.DIPLODOCUS, 10, 15.00,90.00);
         visitor = new Visitor();
     }
 

@@ -17,9 +17,9 @@ public class RaptorPaddockTest {
     @Before
     public void before() {
         raptorPaddock = new RaptorPaddock("Raptor Kingdom", 3);
-        velociraptor = new Velociraptor("Vanessa", DietType.CARNIVORE, 9, 0.02, 6.8);
-        tyrannosaurus = new Tyrannosaurus("Teddy", DietType.CARNIVORE, 5, 10.00, 40.0);
-        diplodocus = new Diplodocus("Dippy", DietType.HERBIVORE, 10, 15.00, 90.00);
+        velociraptor = new Velociraptor("Vanessa", DietType.CARNIVORE,SpeciesType.VELOCIRAPTOR,9,0.02,6.80);
+        tyrannosaurus = new Tyrannosaurus("Teddy", DietType.CARNIVORE,SpeciesType.TYRANNOSAURUS,5,10.00,40.00);
+        diplodocus = new Diplodocus("Dippy", DietType.HERBIVORE, SpeciesType.DIPLODOCUS, 10, 15.00,90.00);
     }
 
     @Test

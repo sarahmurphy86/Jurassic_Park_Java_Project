@@ -1,6 +1,7 @@
 import Dinosaurs.DietType;
 import Dinosaurs.Diplodocus;
 import Dinosaurs.FoodType;
+import Dinosaurs.SpeciesType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -10,13 +11,12 @@ public class DiplodocusTest {
 
     Diplodocus diplodocus;
     Diplodocus diplodocus2;
-    Diplodocus diplodocus3;
 
     @Before
     public void before() {
 
-        diplodocus = new Diplodocus("Dippy", DietType.HERBIVORE, 10, 15.00, 90.00);
-        diplodocus2 = new Diplodocus("Dave", DietType.HERBIVORE, 1, 15.00, 90.00);
+        diplodocus = new Diplodocus("Dippy", DietType.HERBIVORE, SpeciesType.DIPLODOCUS, 10, 15.00, 90.00);
+        diplodocus2 = new Diplodocus("Dave", DietType.HERBIVORE,SpeciesType.DIPLODOCUS, 1, 15.00, 90.00);
     }
 
     @Test
@@ -27,6 +27,11 @@ public class DiplodocusTest {
     @Test
     public void canGetDietType() {
         assertEquals(DietType.HERBIVORE, diplodocus.getDietType());
+    }
+
+    @Test
+    public void canGetSpeciesType(){
+        assertEquals(SpeciesType.DIPLODOCUS, diplodocus.getSpeciesType());
     }
 
     @Test

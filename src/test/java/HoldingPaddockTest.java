@@ -1,5 +1,6 @@
 import Dinosaurs.DietType;
 import Dinosaurs.Diplodocus;
+import Dinosaurs.SpeciesType;
 import Paddocks.DiplodocusPaddock;
 import Paddocks.HoldingPaddock;
 import org.junit.Before;
@@ -15,7 +16,7 @@ public class HoldingPaddockTest {
     @Before
     public void before() {
       holdingPaddock = new HoldingPaddock("Herbivore Safety", 5);
-      diplodocus = new Diplodocus("Dippy", DietType.HERBIVORE, 10, 15.00, 90.00);
+      diplodocus = new Diplodocus("Dippy", DietType.HERBIVORE, SpeciesType.DIPLODOCUS, 10, 15.00, 90.00);
     }
 
     @Test

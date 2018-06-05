@@ -1,5 +1,6 @@
 import Dinosaurs.DietType;
 import Dinosaurs.Diplodocus;
+import Dinosaurs.SpeciesType;
 import Paddocks.DiplodocusPaddock;
 import org.junit.Before;
 import org.junit.Test;
@@ -15,7 +16,7 @@ public class DiplodocusPaddockTest {
     @Before
     public void before() {
         diplodocusPaddock = new DiplodocusPaddock("Diplodocus Heaven", 5);
-        diplodocus = new Diplodocus("Dippy", DietType.HERBIVORE, 10, 15.00, 90.00);
+        diplodocus = new Diplodocus("Dippy", DietType.HERBIVORE, SpeciesType.DIPLODOCUS, 10, 15.00, 90.00);
     }
 
     @Test
