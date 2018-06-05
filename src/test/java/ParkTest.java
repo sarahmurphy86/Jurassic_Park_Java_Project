@@ -1,7 +1,5 @@
 import Dinosaurs.*;
-import Paddocks.DiplodocusPaddock;
-import Paddocks.HoldingPaddock;
-import Paddocks.RaptorPaddock;
+import Paddocks.Paddock;
 import Park.Park;
 import Visitors.Visitor;
 import org.junit.Before;
@@ -12,9 +10,9 @@ import static org.junit.Assert.assertEquals;
 public class ParkTest {
 
     Park park;
-    RaptorPaddock raptorPaddock;
-    DiplodocusPaddock diplodocusPaddock;
-    HoldingPaddock holdingPaddock;
+    Paddock raptorPaddock;
+    Paddock diplodocusPaddock;
+    Paddock holdingPaddock;
     Visitor visitor;
     Diplodocus diplodocus;
     Velociraptor velociraptor;
@@ -23,9 +21,9 @@ public class ParkTest {
     @Before
     public void before(){
         park = new Park("Jurassic Park",3, 2);
-        raptorPaddock = new RaptorPaddock("Raptor Kingdom", 3);
-        diplodocusPaddock = new DiplodocusPaddock("Diplodocus Heaven", 10);
-        holdingPaddock = new HoldingPaddock("Herbivore Safety", 5);
+        raptorPaddock = new Paddock("Raptor Kingdom", 3);
+        diplodocusPaddock = new Paddock("Diplodocus Heaven", 10);
+        holdingPaddock = new Paddock("Herbivore Safety", 5);
         velociraptor = new Velociraptor("Vanessa", DietType.CARNIVORE, SpeciesType.VELOCIRAPTOR,9,0.02,6.80);
         tyrannosaurus = new Tyrannosaurus("Teddy", DietType.CARNIVORE,SpeciesType.TYRANNOSAURUS,5,10.00,40.00);
         diplodocus = new Diplodocus("Dippy", DietType.HERBIVORE, SpeciesType.DIPLODOCUS, 10, 15.00,90.00);
@@ -98,18 +96,6 @@ public class ParkTest {
         park.removePaddock(diplodocusPaddock);
         assertEquals(1, park.getPaddockCount());
     }
-
-//    @Test
-//    public void checkIfHerbivore__true(){
-//        diplodocusPaddock.addDinosaur(diplodocus);
-//        assertEquals(true, park.checkIfHerbivore(diplodocus));
-//    }
-//
-//    @Test
-//    public void checkIfHerbivore__false(){
-//        raptorPaddock.addDinosaur(velociraptor);
-//        assertEquals(false, park.checkIfHerbivore(velociraptor));
-//    }
 
     @Test
     public void canMoveHerbivoreBetweenPaddocks(){

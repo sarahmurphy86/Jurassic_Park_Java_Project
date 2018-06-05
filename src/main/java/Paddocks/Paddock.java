@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 import static Dinosaurs.DietType.HERBIVORE;
 
-public abstract class Paddock {
+public class Paddock {
     protected String name;
     protected int capacity;
     public ArrayList<Dinosaur> dinosaurList;
@@ -55,7 +55,23 @@ public abstract class Paddock {
 //        else return;
 //    }
 
-//Add Dinosaur method - version 4
+//Add Dinosaur method - version 4 - if a Herbivore was already in the paddock you could add a carnivore
+//  public void addDinosaur(Dinosaur dinosaur){
+//    if (this.dinosaurList.size()== 0){
+//        dinosaurList.add(dinosaur);
+//    }
+//
+//    else if ((this.dinosaurList.size()< this.capacity) && (dinosaurList.get(0).getDietType() == DietType.HERBIVORE)
+//        dinosaurList.add(dinosaur);
+//    }
+//
+//    else if ((this.dinosaurList.size()< this.capacity) && (dinosaurList.get(0).getSpeciesType() == dinosaur.getSpeciesType())) {
+//        dinosaurList.add(dinosaur);
+//    }
+//    else return;
+//}
+//    Add dinosaur - method 5
+
     public void addDinosaur(Dinosaur dinosaur){
         if (this.dinosaurList.size()== 0){
             dinosaurList.add(dinosaur);
@@ -73,30 +89,13 @@ public abstract class Paddock {
    }
 
 //    To remove any dinosaur - ie pick the first one in the array
+
     public Dinosaur removeDinosaur(){
         return this.dinosaurList.remove(0);
     }
 
 
-//    public int herbivoreListCount(){
-//        for (Dinosaur dinosaur : dinosaurList){
-//            if (dinosaur.getDietType()== DietType.HERBIVORE);
-////            this.dinosaurList.remove(dinosaur);
-//            this.herbivoreList.add(dinosaur);
-//        }
-//        return this.herbivoreList.size();
-//    }
 
-
-//    public void removeHerbivore(Dinosaur dinosaur) {
-//        if (dinosaur.getDietType()==DietType.HERBIVORE)
-//        this.dinosaurList.remove(dinosaur);
-//    }
-
-//    public boolean findHerbivore(Dinosaur dinosaur) {
-//        if (dinosaur.getDietType()== DietType.HERBIVORE);
-//            return true;
-//        }
 
 
 }

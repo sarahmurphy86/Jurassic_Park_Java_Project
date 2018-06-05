@@ -3,10 +3,7 @@ package Park;
 import Dinosaurs.DietType;
 import Dinosaurs.Dinosaur;
 import Dinosaurs.SpeciesType;
-import Dinosaurs.Velociraptor;
-import Paddocks.HoldingPaddock;
 import Paddocks.Paddock;
-import Paddocks.RaptorPaddock;
 import Visitors.Visitor;
 
 import java.util.ArrayList;
@@ -59,12 +56,6 @@ public class Park {
         return this.visitorCapacity;
     }
 
-//    public boolean checkIfHerbivore(Dinosaur dinosaur) {
-//        if(dinosaur.getDietType() == DietType.HERBIVORE) {
-//            return true;
-//        }
-//            else return false;
-//    }
 
 // What dinosaur do you want to move - DietType.HERBIVORE
 // Find what paddock the dinosaur is in - originPaddock
@@ -72,12 +63,13 @@ public class Park {
 // Take the dinosaur out of origin paddock (remove method)
 // Add the dinosaur to the destination paddock (add method)
 
+//    Move herbivore- version 1 (if you try and move the Herbivore into a paddock with a Carnivore - it disappears! You can remove it but you cannot add it))
 //    public void moveHerbivore(Dinosaur dinosaur, Paddock originPaddock, Paddock destinationPaddock) {
 //       if(dinosaur.getDietType()== DietType.HERBIVORE){
 //            originPaddock.removeDinosaur();
 //            destinationPaddock.addDinosaur(dinosaur);
 //        }
-//    }
+//    Move herbivore - version 2
     public void moveHerbivore(Dinosaur dinosaur, Paddock originPaddock, Paddock destinationPaddock) {
         if(dinosaur.getDietType()== DietType.HERBIVORE) {
             originPaddock.removeDinosaur();

@@ -8,49 +8,61 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 public class TyrannosaurusTest {
-    Tyrannosaurus tyrannosaurus;
+    Tyrannosaurus tyrannosaurus1;
+    Tyrannosaurus tyrannosaurus2;
 
     @Before
     public void before() {
 
-        tyrannosaurus = new Tyrannosaurus("Teddy", DietType.CARNIVORE, SpeciesType.TYRANNOSAURUS, 5, 10.00, 40.00);
+        tyrannosaurus1 = new Tyrannosaurus("Teddy", DietType.CARNIVORE, SpeciesType.TYRANNOSAURUS, 5, 10.00, 40.00);
+        tyrannosaurus2 = new Tyrannosaurus("Teddy", DietType.CARNIVORE, SpeciesType.TYRANNOSAURUS, 8, 11.00, 43.00);
 
     }
 
     @Test
     public void canGetName(){
-        assertEquals("Teddy", tyrannosaurus.getName());
+        assertEquals("Teddy", tyrannosaurus1.getName());
     }
 
     @Test
     public void canGetDietType() {
-        assertEquals(DietType.CARNIVORE, tyrannosaurus.getDietType());
+        assertEquals(DietType.CARNIVORE, tyrannosaurus1.getDietType());
     }
 
     @Test
     public void canGetSpeciesType() {
-        assertEquals(SpeciesType.TYRANNOSAURUS, tyrannosaurus.getSpeciesType());
+        assertEquals(SpeciesType.TYRANNOSAURUS, tyrannosaurus1.getSpeciesType());
     }
 
     @Test
     public void canGetHungerLevel() {
-        assertEquals(5, tyrannosaurus.getHungerLevel());
+        assertEquals(5, tyrannosaurus1.getHungerLevel());
     }
 
     @Test
     public void canGetWeight(){
-        assertEquals(10, tyrannosaurus.getWeightInTonnes(), 0.00);
+        assertEquals(10, tyrannosaurus1.getWeightInTonnes(), 0.00);
     }
 
     @Test
     public void canGetLengthInFeet(){
-        assertEquals(40, tyrannosaurus.getLengthInFeet(), 0.00);
+        assertEquals(40, tyrannosaurus1.getLengthInFeet(), 0.00);
     }
 
     @Test
     public void canEat(){
-        tyrannosaurus.canFeed(FoodType.DINOBISCUITS);
-        assertEquals(2, tyrannosaurus.getHungerLevel());
+        tyrannosaurus1.canFeed(FoodType.DINOBISCUITS);
+        assertEquals(2, tyrannosaurus1.getHungerLevel());
+    }
+
+    @Test
+    public void canRampage__true(){
+        assertEquals(true, tyrannosaurus1.canRampage());
+    }
+
+    @Test
+    public void canRampage__false(){
+        assertEquals(false, tyrannosaurus2.canRampage());
     }
 
 }
