@@ -8,13 +8,15 @@ import java.util.ArrayList;
 
 public class Park {
     private String name;
+    private double admissionPriceAdult;
     private int visitorCapacity;
     private int paddockCapacity;
     private ArrayList<Paddock> paddockList;
     private ArrayList<Visitor> visitorList;
 
-    public Park(String name, int visitorCapacity, int paddockCapacity){
+    public Park(String name, double admissionPriceAdult, int visitorCapacity, int paddockCapacity){
         this.name = name;
+        this.admissionPriceAdult = admissionPriceAdult;
         this.visitorCapacity = visitorCapacity;
         this.paddockCapacity = paddockCapacity;
         this.paddockList = new ArrayList<Paddock>();
@@ -27,6 +29,10 @@ public class Park {
 
     public int getVisitorCount() {
         return this.visitorList.size();
+    }
+
+    public double getAdmissionPriceAdult() {
+        return this.admissionPriceAdult;
     }
 
 //    Version 1
@@ -131,6 +137,20 @@ public class Park {
         }
         return totalDinosaurs.size();
     }
+
+    public double getAdmissionsTotal() {
+        admissionsTotal = 0
+                for(Visitor visitor: this.visitorList){
+            visitor.payAdmissionFee(Park Park);
+                }
+
+
+        return admissionsTotal;
+    }
+
+//    public void chargeVisitor(Visitor visitor) {
+//        visitor.getWallet() -= admissionPriceAdult;
+//    }
 }
 
 

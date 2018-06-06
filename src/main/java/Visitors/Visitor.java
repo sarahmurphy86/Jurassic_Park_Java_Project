@@ -1,5 +1,7 @@
 package Visitors;
 
+import Park.Park;
+
 public class Visitor {
     private String name;
     private double wallet;
@@ -15,5 +17,9 @@ public class Visitor {
 
     public double getWallet() {
         return this.wallet;
+    }
+
+    public void payAdmissionFee(Park park) {
+        this.wallet -= park.getAdmissionPriceAdult();
     }
 }

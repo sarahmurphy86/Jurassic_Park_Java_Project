@@ -21,7 +21,7 @@ public class ParkTest {
 
     @Before
     public void before(){
-        park = new Park("Jurassic Park",3, 2);
+        park = new Park("Jurassic Park",15.00,3, 2);
         raptorPaddock = new Paddock("Raptor Kingdom", 3);
         diplodocusPaddock = new Paddock("Diplodocus Heaven", 10);
         holdingPaddock = new Paddock("Herbivore Safety", 5);
@@ -35,6 +35,11 @@ public class ParkTest {
     @Test
     public void canGetName() {
         assertEquals("Jurassic Park", park.getName());
+    }
+
+    @Test
+    public void canGetAdmissionPriceAdult(){
+        assertEquals(15.00, park.getAdmissionPriceAdult(), 0.00);
     }
 
     @Test
@@ -171,6 +176,13 @@ public class ParkTest {
         park.addPaddock(raptorPaddock);
         raptorPaddock.addDinosaur(velociraptor);
         assertEquals(2,park.totalDinosaursInAllPaddocks());
+    }
+
+    @Test
+    public void canFindOutTotalAmountTakenInAdmissions(){
+        park.addVisitor(visitor);
+        park.addVisitor(visitor);
+        assertEquals(30.00, park.getAdmissionsTotal(), 0.00);
     }
 
 
