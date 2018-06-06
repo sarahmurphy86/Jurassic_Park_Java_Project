@@ -20,6 +20,8 @@ public class Visitor {
     }
 
     public void payAdmissionFee(Park park) {
-        this.wallet -= park.getAdmissionPriceAdult();
+        if (this.wallet >= park.getAdmissionPriceAdult()) {
+            this.wallet -= park.getAdmissionPriceAdult();
+        }
     }
 }

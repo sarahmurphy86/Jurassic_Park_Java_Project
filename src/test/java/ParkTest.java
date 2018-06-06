@@ -21,7 +21,7 @@ public class ParkTest {
 
     @Before
     public void before(){
-        park = new Park("Jurassic Park",15.00,3, 2);
+        park = new Park("Jurassic Park",15.00,0,3, 2);
         raptorPaddock = new Paddock("Raptor Kingdom", 3);
         diplodocusPaddock = new Paddock("Diplodocus Heaven", 10);
         holdingPaddock = new Paddock("Herbivore Safety", 5);
@@ -40,6 +40,11 @@ public class ParkTest {
     @Test
     public void canGetAdmissionPriceAdult(){
         assertEquals(15.00, park.getAdmissionPriceAdult(), 0.00);
+    }
+
+    @Test
+    public void checkTillStartsEmpty(){
+        assertEquals(0, park.getTill(), 0.00);
     }
 
     @Test
@@ -64,7 +69,7 @@ public class ParkTest {
         park.addVisitor(visitor);
         park.addVisitor(visitor);
         park.addVisitor(visitor);
-        assertEquals(3, park.getVisitorCapacity());
+        assertEquals(3, park.getVisitorCount());
     }
 
     @Test
@@ -74,6 +79,14 @@ public class ParkTest {
         park.addVisitor(visitor);
         park.removeVisitor(visitor);
         assertEquals(2, park.getVisitorCount());
+    }
+
+
+    @Test
+    public void checkTillIncreasesWhenVisitorsAdmitted(){
+        park.addVisitor(visitor);
+        park.addVisitor(visitor);
+        assertEquals(30.00, park.getTill(), 0.00);
     }
 
     @Test
@@ -170,6 +183,26 @@ public class ParkTest {
     }
 
     @Test
+    public void canNotRemoveVisitorIfDinosaurIsRampaging(){
+        park.addVisitor(visitor);
+        park.addPaddock(holdingPaddock);
+        holdingPaddock.addDinosaur(tyrannosaurus);
+        park.removeVisitor(visitor);
+        assertEquals(1, park.getVisitorCount());
+    }
+
+    @Test
+    public void canRemoveVisitorIfDinosaurIsNotRampaging(){
+        park.addVisitor(visitor);
+        park.addPaddock(holdingPaddock);
+        holdingPaddock.addDinosaur(diplodocus);
+        park.removeVisitor(visitor);
+        assertEquals(0, park.getVisitorCount());
+    }
+
+
+
+    @Test
     public void canFindOutHowManyDinosaursAreInAllThePaddocks(){
         park.addPaddock(holdingPaddock);
         holdingPaddock.addDinosaur(diplodocus);
@@ -178,12 +211,7 @@ public class ParkTest {
         assertEquals(2,park.totalDinosaursInAllPaddocks());
     }
 
-    @Test
-    public void canFindOutTotalAmountTakenInAdmissions(){
-        park.addVisitor(visitor);
-        park.addVisitor(visitor);
-        assertEquals(30.00, park.getAdmissionsTotal(), 0.00);
-    }
+
 
 
 }

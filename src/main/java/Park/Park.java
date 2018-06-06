@@ -9,14 +9,16 @@ import java.util.ArrayList;
 public class Park {
     private String name;
     private double admissionPriceAdult;
+    private double till;
     private int visitorCapacity;
     private int paddockCapacity;
     private ArrayList<Paddock> paddockList;
     private ArrayList<Visitor> visitorList;
 
-    public Park(String name, double admissionPriceAdult, int visitorCapacity, int paddockCapacity){
+    public Park(String name, double admissionPriceAdult, double till, int visitorCapacity, int paddockCapacity){
         this.name = name;
         this.admissionPriceAdult = admissionPriceAdult;
+        this.till = 0;
         this.visitorCapacity = visitorCapacity;
         this.paddockCapacity = paddockCapacity;
         this.paddockList = new ArrayList<Paddock>();
@@ -35,20 +37,31 @@ public class Park {
         return this.admissionPriceAdult;
     }
 
+    public double getTill() {
+        return this.till;
+    }
+
 //    Version 1
 //    public void addVisitor(Visitor visitor) {
 //        if(this.visitorList.size()<this.visitorCapacity)
 //            this.visitorList.add(visitor);
 //    }
+//    Version 2
+//      public void addVisitor(Visitor visitor) {
+//          if((this.visitorList.size()<this.visitorCapacity) && (checkIfDinosaurIsRampaging() != true))
+//              this.visitorList.add(visitor);
+//
 
-//    Version 2 - adding visitor if there is no dinosaur rampaging.
+//    Version 3 - adding visitor if there is no dinosaur rampaging.
     public void addVisitor(Visitor visitor) {
         if((this.visitorList.size()<this.visitorCapacity) && (checkIfDinosaurIsRampaging() != true))
             this.visitorList.add(visitor);
+            this.till += admissionPriceAdult;
     }
 
     public void removeVisitor(Visitor visitor) {
-        this.visitorList.remove(visitor);
+        if(checkIfDinosaurIsRampaging() != true)
+             this.visitorList.remove(visitor);
     }
 
     public int getPaddockCount() {
@@ -59,6 +72,7 @@ public class Park {
         if(this.paddockList.size()<this.paddockCapacity)
         this.paddockList.add(paddock);
     }
+
     public void removePaddock(Paddock paddock) {
         this.paddockList.remove(paddock);
     }
@@ -138,19 +152,6 @@ public class Park {
         return totalDinosaurs.size();
     }
 
-    public double getAdmissionsTotal() {
-        admissionsTotal = 0
-                for(Visitor visitor: this.visitorList){
-            visitor.payAdmissionFee(Park Park);
-                }
-
-
-        return admissionsTotal;
-    }
-
-//    public void chargeVisitor(Visitor visitor) {
-//        visitor.getWallet() -= admissionPriceAdult;
-//    }
 }
 
 
