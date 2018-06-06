@@ -21,9 +21,9 @@ public class PaddockTest {
         raptorPaddock = new Paddock("Raptor Kingdom", 3);
         diplodocusPaddock = new Paddock("Diplodocus Heaven", 5);
         holdingPaddock = new Paddock("Herbivore Safety", 5);
-        velociraptor = new Velociraptor("Vanessa", DietType.CARNIVORE, SpeciesType.VELOCIRAPTOR,9,0.02,6.80);
-        tyrannosaurus = new Tyrannosaurus("Teddy", DietType.CARNIVORE,SpeciesType.TYRANNOSAURUS,5,10.00,40.00);
-        diplodocus = new Diplodocus("Dippy", DietType.HERBIVORE, SpeciesType.DIPLODOCUS, 10, 15.00, 90.00);
+        velociraptor = new Velociraptor("Vanessa",9,0.02,6.80);
+        tyrannosaurus = new Tyrannosaurus("Teddy",5,10.00,40.00);
+        diplodocus = new Diplodocus("Dippy", 10, 15.00, 90.00);
         triceretops = new Triceretops("Tina",4, 11.00,30);
     }
 

@@ -2,8 +2,8 @@ package Dinosaurs;
 
 public class Tyrannosaurus extends Dinosaur implements IRampage{
 
-    public Tyrannosaurus(String name, DietType dietType, SpeciesType speciesType, int hungerLevel, double weightInTonnes, double lengthInFeet) {
-        super(name, dietType, speciesType, hungerLevel, weightInTonnes, lengthInFeet);
+    public Tyrannosaurus(String name, int hungerLevel, double weightInTonnes, double lengthInFeet) {
+        super(name, DietType.CARNIVORE, SpeciesType.TYRANNOSAURUS, hungerLevel, weightInTonnes, lengthInFeet);
     }
 
 //    return this.hungerLevel >=5 rather than if statement - look at this when re-factoring.

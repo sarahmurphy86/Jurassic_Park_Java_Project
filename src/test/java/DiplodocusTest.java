@@ -12,8 +12,8 @@ public class DiplodocusTest {
     @Before
     public void before() {
 
-        diplodocus = new Diplodocus("Dippy", DietType.HERBIVORE, SpeciesType.DIPLODOCUS, 10, 15.00, 90.00);
-        diplodocus2 = new Diplodocus("Dave", DietType.HERBIVORE,SpeciesType.DIPLODOCUS, 0, 15.00, 90.00);
+        diplodocus = new Diplodocus("Dippy", 10, 15.00, 90.00);
+        diplodocus2 = new Diplodocus("Dave",  1, 15.00, 90.00);
     }
 
     @Test

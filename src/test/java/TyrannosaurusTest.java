@@ -14,8 +14,8 @@ public class TyrannosaurusTest {
     @Before
     public void before() {
 
-        tyrannosaurus1 = new Tyrannosaurus("Teddy", DietType.CARNIVORE, SpeciesType.TYRANNOSAURUS, 5, 10.00, 40.00);
-        tyrannosaurus2 = new Tyrannosaurus("Teddy", DietType.CARNIVORE, SpeciesType.TYRANNOSAURUS, 2, 11.00, 43.00);
+        tyrannosaurus1 = new Tyrannosaurus("Teddy",5, 10.00, 40.00);
+        tyrannosaurus2 = new Tyrannosaurus("Teddy", 2, 11.00, 43.00);
 
     }
 
@@ -53,6 +53,12 @@ public class TyrannosaurusTest {
     public void canEat(){
         tyrannosaurus1.canFeed(FoodType.DINOBISCUITS);
         assertEquals(2, tyrannosaurus1.getHungerLevel());
+    }
+
+    @Test
+    public void canNotHaveMinusHungerLevel(){
+        tyrannosaurus2.canFeed(FoodType.PARKRANGER);
+        assertEquals(0, tyrannosaurus2.getHungerLevel());
     }
 
     @Test
