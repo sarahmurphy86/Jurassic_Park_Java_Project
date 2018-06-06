@@ -2,12 +2,12 @@ package Dinosaurs;
 
 public abstract class Dinosaur {
 
-    protected String name;
-    protected DietType dietType;
-    protected SpeciesType speciesType;
+    private String name;
+    private DietType dietType;
+    private SpeciesType speciesType;
     protected int hungerLevel;
-    protected double weightInTonnes;
-    protected double lengthInFeet;
+    private double weightInTonnes;
+    private double lengthInFeet;
 
     public Dinosaur(String name, DietType dietType, SpeciesType speciesType, int hungerLevel, double weightInTonnes, double lengthInFeet) {
         this.name = name;

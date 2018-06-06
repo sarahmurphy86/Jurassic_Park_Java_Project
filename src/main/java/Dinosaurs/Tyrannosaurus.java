@@ -15,10 +15,10 @@ public class Tyrannosaurus extends Dinosaur implements IRampage{
 //        else return false;
 //    }
 //  Version 2
+//
     public boolean isRampaging() {
         return this.hungerLevel >= 5;
     }
-
 
 
 }

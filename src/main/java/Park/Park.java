@@ -41,27 +41,30 @@ public class Park {
         return this.till;
     }
 
-//    Version 1
+//Version 1
 //    public void addVisitor(Visitor visitor) {
 //        if(this.visitorList.size()<this.visitorCapacity)
 //            this.visitorList.add(visitor);
 //    }
-//    Version 2
+
+//Version 2
 //      public void addVisitor(Visitor visitor) {
 //          if((this.visitorList.size()<this.visitorCapacity) && (checkIfDinosaurIsRampaging() != true))
 //              this.visitorList.add(visitor);
 //
 
-//    Version 3 - adding visitor if there is no dinosaur rampaging.
+//Version 3 - adding visitor if there is no dinosaur rampaging.
     public void addVisitor(Visitor visitor) {
-        if((this.visitorList.size()<this.visitorCapacity) && (checkIfDinosaurIsRampaging() != true))
+        if ((this.visitorList.size() < this.visitorCapacity) && (!checkIfDinosaurIsRampaging())) {
             this.visitorList.add(visitor);
             this.till += admissionPriceAdult;
+        }
     }
 
     public void removeVisitor(Visitor visitor) {
-        if(checkIfDinosaurIsRampaging() != true)
-             this.visitorList.remove(visitor);
+        if(!checkIfDinosaurIsRampaging()){
+            this.visitorList.remove(visitor);
+        }
     }
 
     public int getPaddockCount() {
@@ -69,8 +72,9 @@ public class Park {
     }
 
     public void addPaddock(Paddock paddock) {
-        if(this.paddockList.size()<this.paddockCapacity)
-        this.paddockList.add(paddock);
+        if (this.paddockList.size() < this.paddockCapacity) {
+            this.paddockList.add(paddock);
+        }
     }
 
     public void removePaddock(Paddock paddock) {
@@ -87,28 +91,45 @@ public class Park {
 // Take the dinosaur out of origin paddock (remove method)
 // Add the dinosaur to the destination paddock (add method)
 
-//    Move herbivore- version 1 (if you try and move the Herbivore into a paddock with a Carnivore - it disappears! You can remove it but you cannot add it))
+//Move herbivore- version 1 (if you try and move the Herbivore into a paddock with a Carnivore - it disappears! You can remove it but you cannot add it))
+
 //    public void moveHerbivore(Dinosaur dinosaur, Paddock originPaddock, Paddock destinationPaddock) {
 //       if(dinosaur.getDietType()== DietType.HERBIVORE){
 //            originPaddock.removeDinosaur();
 //            destinationPaddock.addDinosaur(dinosaur);
 //        }
-//    Move herbivore - version 2
+
+//Move herbivore - version 2
+//    public void moveHerbivore(Dinosaur dinosaur, Paddock originPaddock, Paddock destinationPaddock) {
+//        if(dinosaur.getDietType()== DietType.HERBIVORE) {
+//            originPaddock.removeDinosaur();
+//        }
+//        if (destinationPaddock.dinosaurList.size()== 0){
+//            destinationPaddock.addDinosaur(dinosaur);
+//        }
+//
+//        else if (destinationPaddock.dinosaurList.get(0).getDietType() == DietType.HERBIVORE) {
+//            destinationPaddock.addDinosaur(dinosaur);
+//        }
+//        else if(destinationPaddock.dinosaurList.get(0).getDietType() != DietType.HERBIVORE){
+//            originPaddock.addDinosaur(dinosaur);
+//        }
+//    }
+
+//    Move herbivore - version 3 - try to refactor this!
     public void moveHerbivore(Dinosaur dinosaur, Paddock originPaddock, Paddock destinationPaddock) {
-        if(dinosaur.getDietType()== DietType.HERBIVORE) {
+
+        if(dinosaur.getDietType() == DietType.HERBIVORE) {
             originPaddock.removeDinosaur();
         }
-        if (destinationPaddock.dinosaurList.size()== 0){
+
+        if (destinationPaddock.dinosaurList.size() == 0 || destinationPaddock.dinosaurList.get(0).getDietType() == DietType.HERBIVORE){
             destinationPaddock.addDinosaur(dinosaur);
         }
 
-        else if (destinationPaddock.dinosaurList.get(0).getDietType() == DietType.HERBIVORE) {
-            destinationPaddock.addDinosaur(dinosaur);
-        }
-        else if(destinationPaddock.dinosaurList.get(0).getDietType() != DietType.HERBIVORE){
-            originPaddock.addDinosaur(dinosaur);
-        }
+        else originPaddock.addDinosaur(dinosaur);
     }
+
 
     public void moveVelociraptor(Dinosaur dinosaur, Paddock originPaddock, Paddock destinationPaddock) {
         if(dinosaur.getSpeciesType()== SpeciesType.VELOCIRAPTOR){
