@@ -17,6 +17,7 @@ public class ParkTest {
     Diplodocus diplodocus;
     Velociraptor velociraptor;
     Tyrannosaurus tyrannosaurus;
+    Triceretops triceretops;
 
     @Before
     public void before(){
@@ -27,6 +28,7 @@ public class ParkTest {
         velociraptor = new Velociraptor("Vanessa",9,0.02,6.80);
         tyrannosaurus = new Tyrannosaurus("Teddy",5,10.00,40.00);
         diplodocus = new Diplodocus("Dippy", 10, 15.00,90.00);
+        triceretops = new Triceretops("Tina",4, 11.00,30);
         visitor = new Visitor();
     }
 
@@ -130,6 +132,7 @@ public class ParkTest {
         assertEquals(1, raptorPaddock.dinosaurListCount());
         assertEquals(1, holdingPaddock.dinosaurListCount());
     }
+//Version1 - rampaging returns T or F
 
     @Test
     public void checkIfDinosaurIsRampaging(){
@@ -160,6 +163,15 @@ public class ParkTest {
         holdingPaddock.addDinosaur(diplodocus);
         park.addVisitor(visitor);
         assertEquals(1, park.getVisitorCount());
+    }
+
+    @Test
+    public void canFindOutHowManyDinosaursAreInAllThePaddocks(){
+        park.addPaddock(holdingPaddock);
+        holdingPaddock.addDinosaur(diplodocus);
+        park.addPaddock(raptorPaddock);
+        raptorPaddock.addDinosaur(velociraptor);
+        assertEquals(2,park.totalDinosaursInAllPaddocks());
     }
 
 

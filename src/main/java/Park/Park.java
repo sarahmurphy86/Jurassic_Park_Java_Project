@@ -35,9 +35,9 @@ public class Park {
 //            this.visitorList.add(visitor);
 //    }
 
-//    Version 2
+//    Version 2 - adding visitor if there is no dinosaur rampaging.
     public void addVisitor(Visitor visitor) {
-        if(this.visitorList.size()<this.visitorCapacity && checkIfDinosaurIsRampaging() != true )
+        if((this.visitorList.size()<this.visitorCapacity) && (checkIfDinosaurIsRampaging() != true))
             this.visitorList.add(visitor);
     }
 
@@ -96,8 +96,12 @@ public class Park {
             destinationPaddock.addDinosaur(dinosaur);
         }
     }
-//Does the isRampaging method need to be added to all dinosaurs - how do you access this as an interface on one dinosaur?
-// Use Instance of - i.e. treat the dinosaur as an instance of IRampage object.
+// Stuck on having the IRampage interface only implemented by Tyrannosaurus
+// Could not call the isRampaging method - doesn't exist for dinosaur
+// Could have changed the IRampage method to an abstract method and over-ridden it in the other classes
+// Make the dinosaur an instance of IRampage (forcing it to be something that can rampage i.e. rampage object)
+// IRampage has a variable called rampage
+// Means you can call the isRampaging method on a variable rampage instead of dinosaur/tyrannosaurus
     public boolean checkIfDinosaurIsRampaging() {
         for (Paddock paddock : this.paddockList) {
             for (Dinosaur dinosaur : paddock.dinosaurList) {
@@ -110,19 +114,23 @@ public class Park {
         return false;
     }
 
+//  I want to find out how many dinosaurs are in each paddock in the park and get the total amount
+//  I want to loop through all the paddocks in the park
+//  I then want to loop through the dinosaur list of each paddock
+//  If there is a dinosaur in the paddock, I want to add it to the counter- cant have an int so
+//  Create an array list for totalDinosaurs = add the dinosaur to this arraylist and then get the size of it.
 
+
+    public int totalDinosaursInAllPaddocks() {
+        ArrayList<Dinosaur>totalDinosaurs= new ArrayList<>();
+
+        for(Paddock paddock : this.paddockList){
+            for (Dinosaur dinosaur : paddock.dinosaurList) {
+                totalDinosaurs.add(dinosaur);
+            }
+        }
+        return totalDinosaurs.size();
+    }
 }
-
-
-//Messing about - delete the below...
-//    public boolean checkIfDinosaurIsRampaging() {
-//        for (Paddock paddock : this.paddockList){
-//            for(Dinosaur dinosaur : this.dinosaurList)
-//                  if(dinosaur.getSpeciesType()==SpeciesType.TYRANNOSAURUS && )
-//        }
-//        return true;
-//    }
-//        else return false;
-//}
 
 
