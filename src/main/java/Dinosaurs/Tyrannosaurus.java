@@ -6,8 +6,9 @@ public class Tyrannosaurus extends Dinosaur implements IRampage{
         super(name, dietType, speciesType, hungerLevel, weightInTonnes, lengthInFeet);
     }
 
-    public boolean canRampage() {
-        if (this.hungerLevel <= 5) {
+//    return this.hungerLevel >=5 rather than if statement - look at this when re-factoring.
+    public boolean isRampaging() {
+        if (this.hungerLevel >= 5) {
             return true;
         }
         else return false;

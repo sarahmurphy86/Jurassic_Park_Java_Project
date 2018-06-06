@@ -1,8 +1,6 @@
 package Park;
 
-import Dinosaurs.DietType;
-import Dinosaurs.Dinosaur;
-import Dinosaurs.SpeciesType;
+import Dinosaurs.*;
 import Paddocks.Paddock;
 import Visitors.Visitor;
 
@@ -31,8 +29,15 @@ public class Park {
         return this.visitorList.size();
     }
 
+//    Version 1
+//    public void addVisitor(Visitor visitor) {
+//        if(this.visitorList.size()<this.visitorCapacity)
+//            this.visitorList.add(visitor);
+//    }
+
+//    Version 2
     public void addVisitor(Visitor visitor) {
-        if(this.visitorList.size()<this.visitorCapacity)
+        if(this.visitorList.size()<this.visitorCapacity && checkIfDinosaurIsRampaging() != true )
             this.visitorList.add(visitor);
     }
 
@@ -55,7 +60,6 @@ public class Park {
     public int getVisitorCapacity() {
         return this.visitorCapacity;
     }
-
 
 // What dinosaur do you want to move - DietType.HERBIVORE
 // Find what paddock the dinosaur is in - originPaddock
@@ -92,5 +96,33 @@ public class Park {
             destinationPaddock.addDinosaur(dinosaur);
         }
     }
+//Does the isRampaging method need to be added to all dinosaurs - how do you access this as an interface on one dinosaur?
+// Use Instance of - i.e. treat the dinosaur as an instance of IRampage object.
+    public boolean checkIfDinosaurIsRampaging() {
+        for (Paddock paddock : this.paddockList) {
+            for (Dinosaur dinosaur : paddock.dinosaurList) {
+                if (dinosaur instanceof IRampage) {
+                    IRampage rampage = (IRampage) dinosaur;
+                    if (rampage.isRampaging()) return true;
+                }
+            }
+        }
+        return false;
+    }
+
+
 }
+
+
+//Messing about - delete the below...
+//    public boolean checkIfDinosaurIsRampaging() {
+//        for (Paddock paddock : this.paddockList){
+//            for(Dinosaur dinosaur : this.dinosaurList)
+//                  if(dinosaur.getSpeciesType()==SpeciesType.TYRANNOSAURUS && )
+//        }
+//        return true;
+//    }
+//        else return false;
+//}
+
 

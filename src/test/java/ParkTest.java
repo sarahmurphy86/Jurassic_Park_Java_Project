@@ -108,7 +108,7 @@ public class ParkTest {
         assertEquals(1, diplodocusPaddock.dinosaurListCount());
     }
 
-//    Dinosaur disappears - i.e. it cant be added to to the raptorPaddock because there is a Velocirapor in there, but doesn't stay in the holdingPaddock.
+//    Dinosaur used to disappear - i.e. it cant be added to to the raptorPaddock because there is a Velocirapor in there, but doesn't stay in the holdingPaddock- this has been fixed
     @Test
     public void canNotMoveHerbivoreIfCarnivorePresent(){
         park.addPaddock(raptorPaddock);
@@ -129,6 +129,37 @@ public class ParkTest {
         park.moveVelociraptor(velociraptor,holdingPaddock,raptorPaddock);
         assertEquals(1, raptorPaddock.dinosaurListCount());
         assertEquals(1, holdingPaddock.dinosaurListCount());
+    }
+
+    @Test
+    public void checkIfDinosaurIsRampaging(){
+        park.addPaddock(holdingPaddock);
+        holdingPaddock.addDinosaur(tyrannosaurus);
+        assertEquals(true, park.checkIfDinosaurIsRampaging());
+    }
+
+    @Test
+    public void checkIfDinosaurIsRampaging_False(){
+        park.addPaddock(holdingPaddock);
+        holdingPaddock.addDinosaur(diplodocus);
+        assertEquals(false, park.checkIfDinosaurIsRampaging());
+    }
+
+//    Once a check rampage method has been added to dinosaur class - and added to the add visitor function then test below should work
+    @Test
+    public void canNotAddVisitorIfDinosaurRampaging(){
+        park.addPaddock(holdingPaddock);
+        holdingPaddock.addDinosaur(tyrannosaurus);
+        park.addVisitor(visitor);
+        assertEquals(0, park.getVisitorCount());
+    }
+
+    @Test
+    public void canAddVisitorIfDinosaurIsNotRampaging(){
+        park.addPaddock(holdingPaddock);
+        holdingPaddock.addDinosaur(diplodocus);
+        park.addVisitor(visitor);
+        assertEquals(1, park.getVisitorCount());
     }
 
 

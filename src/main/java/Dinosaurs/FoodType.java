@@ -2,6 +2,7 @@ package Dinosaurs;
 
 public enum FoodType {
 
+    PARKRANGER(5),
     DINOBISCUITS(3),
     CHICKEN(2),
     PLANTS(1);

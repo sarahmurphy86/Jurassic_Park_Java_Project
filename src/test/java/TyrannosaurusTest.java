@@ -15,7 +15,7 @@ public class TyrannosaurusTest {
     public void before() {
 
         tyrannosaurus1 = new Tyrannosaurus("Teddy", DietType.CARNIVORE, SpeciesType.TYRANNOSAURUS, 5, 10.00, 40.00);
-        tyrannosaurus2 = new Tyrannosaurus("Teddy", DietType.CARNIVORE, SpeciesType.TYRANNOSAURUS, 8, 11.00, 43.00);
+        tyrannosaurus2 = new Tyrannosaurus("Teddy", DietType.CARNIVORE, SpeciesType.TYRANNOSAURUS, 2, 11.00, 43.00);
 
     }
 
@@ -56,13 +56,13 @@ public class TyrannosaurusTest {
     }
 
     @Test
-    public void canRampage__true(){
-        assertEquals(true, tyrannosaurus1.canRampage());
+    public void isRampaging__true(){
+        assertEquals(true, tyrannosaurus1.isRampaging());
     }
 
     @Test
-    public void canRampage__false(){
-        assertEquals(false, tyrannosaurus2.canRampage());
+    public void isRampaging__false(){
+        assertEquals(false, tyrannosaurus2.isRampaging());
     }
 
 }
