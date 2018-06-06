@@ -7,7 +7,7 @@ import Visitors.Visitor;
 import java.util.ArrayList;
 
 public class Park {
-    protected String name;
+    private String name;
     private int visitorCapacity;
     private int paddockCapacity;
     private ArrayList<Paddock> paddockList;

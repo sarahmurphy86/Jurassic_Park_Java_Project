@@ -29,7 +29,7 @@ public class ParkTest {
         tyrannosaurus = new Tyrannosaurus("Teddy",5,10.00,40.00);
         diplodocus = new Diplodocus("Dippy", 10, 15.00,90.00);
         triceretops = new Triceretops("Tina",4, 11.00,30);
-        visitor = new Visitor();
+        visitor = new Visitor("Sophie", 28.00);
     }
 
     @Test
@@ -148,7 +148,6 @@ public class ParkTest {
         assertEquals(false, park.checkIfDinosaurIsRampaging());
     }
 
-//    Once a check rampage method has been added to dinosaur class - and added to the add visitor function then test below should work
     @Test
     public void canNotAddVisitorIfDinosaurRampaging(){
         park.addPaddock(holdingPaddock);
