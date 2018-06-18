@@ -1,5 +1,7 @@
 package Dinosaurs;
 
+import Dinosaurs.Enums.DietType;
+
 public class Diplodocus extends Dinosaur {
 
 

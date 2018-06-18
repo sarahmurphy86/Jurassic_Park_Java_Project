@@ -1,5 +1,7 @@
 package Dinosaurs;
 
+import Dinosaurs.Enums.DietType;
+
 public class Velociraptor extends Dinosaur{
 
     public Velociraptor(String name, int hungerLevel, double weightInTonnes, double lengthInFeet) {

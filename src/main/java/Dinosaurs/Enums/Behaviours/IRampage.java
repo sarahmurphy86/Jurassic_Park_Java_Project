@@ -1,4 +1,4 @@
-package Dinosaurs;
+package Dinosaurs.Enums.Behaviours;
 
 public interface IRampage {
 

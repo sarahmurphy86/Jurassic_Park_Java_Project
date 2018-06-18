@@ -21,7 +21,7 @@ public class ParkTest {
 
     @Before
     public void before(){
-        park = new Park("Jurassic Park",15.00,0,3, 2);
+        park = new Park("Jurassic Park",15.00,3, 2);
         raptorPaddock = new Paddock("Raptor Kingdom", 3);
         diplodocusPaddock = new Paddock("Diplodocus Heaven", 10);
         holdingPaddock = new Paddock("Herbivore Safety", 5);
@@ -128,7 +128,6 @@ public class ParkTest {
         assertEquals(1, diplodocusPaddock.dinosaurListCount());
     }
 
-//    Dinosaur used to disappear - i.e. it cant be added to to the raptorPaddock because there is a Velocirapor in there, but doesn't stay in the holdingPaddock- this has been fixed
     @Test
     public void canNotMoveHerbivoreIfCarnivorePresent(){
         park.addPaddock(raptorPaddock);
@@ -150,7 +149,7 @@ public class ParkTest {
         assertEquals(1, raptorPaddock.dinosaurListCount());
         assertEquals(1, holdingPaddock.dinosaurListCount());
     }
-//Version1 - rampaging returns T or F
+
 
     @Test
     public void checkIfDinosaurIsRampaging(){

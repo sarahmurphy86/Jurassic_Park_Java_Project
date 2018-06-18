@@ -1,4 +1,6 @@
 import Dinosaurs.*;
+import Dinosaurs.Enums.DietType;
+import Dinosaurs.Enums.FoodType;
 import org.junit.Before;
 import org.junit.Test;
 

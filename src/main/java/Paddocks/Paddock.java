@@ -1,6 +1,6 @@
 package Paddocks;
 
-import Dinosaurs.DietType;
+import Dinosaurs.Enums.DietType;
 import Dinosaurs.Dinosaur;
 import java.util.ArrayList;
 
@@ -29,49 +29,6 @@ public class Paddock {
         return this.dinosaurList.size();
     }
 
-//Add Dinosaur method - version 1
-
-//    public void addDinosaur(Dinosaur dinosaur){
-//        dinosaurList.add(dinosaur);
-//    }
-
-//Add Dinosaur method - version 2
-
-//    public void addDinosaur(Dinosaur dinosaur){
-//       if (this.dinosaurList.size()< this.capacity)
-//        dinosaurList.add(dinosaur);
-//    }
-
-//Add Dinosaur method - version 3
-//    public void addDinosaur(Dinosaur dinosaur){
-//        if (this.dinosaurList.size()== 0){
-//            dinosaurList.add(dinosaur);
-//          }
-//
-//        else if ((this.dinosaurList.size()< this.capacity) && (dinosaurList.get(0).getDietType() == dinosaur.getDietType())) {
-//            dinosaurList.add(dinosaur);
-//        }
-//        else return;
-//    }
-
-//Add Dinosaur method - version 4 - if a Herbivore was already in the paddock you could add a carnivore
-//    public void addDinosaur(Dinosaur dinosaur){
-//      if (this.dinosaurList.size()== 0){
-//        dinosaurList.add(dinosaur);
-//      }
-//
-//    else if ((this.dinosaurList.size()< this.capacity) && (dinosaurList.get(0).getDietType() == DietType.HERBIVORE){
-//        dinosaurList.add(dinosaur);
-//      }
-//
-//    else if ((this.dinosaurList.size()< this.capacity) && (dinosaurList.get(0).getSpeciesType() == dinosaur.getSpeciesType())) {
-//        dinosaurList.add(dinosaur);
-//      }
-//    else return;
-//  }
-
-//Add dinosaur - method 5
-
     public void addDinosaur(Dinosaur dinosaur){
         if (this.dinosaurList.size()== 0){
             dinosaurList.add(dinosaur);
@@ -87,8 +44,6 @@ public class Paddock {
         }
         else return;
    }
-
-//To remove any dinosaur - ie pick the first one in the array
 
     public Dinosaur removeDinosaur(){
         return this.dinosaurList.remove(0);

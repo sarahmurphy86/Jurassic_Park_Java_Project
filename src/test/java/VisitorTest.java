@@ -15,7 +15,7 @@ public class VisitorTest {
     public void before(){
         visitor = new Visitor ("Sophie", 120.00);
         visitor2 = new Visitor ("Darren", 12.00);
-        park = new Park("Jurassic Park",15.00,0,3, 2);
+        park = new Park("Jurassic Park",15.00, 3,2);
     }
 
     @Test

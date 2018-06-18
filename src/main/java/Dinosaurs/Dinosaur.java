@@ -1,5 +1,8 @@
 package Dinosaurs;
 
+import Dinosaurs.Enums.DietType;
+import Dinosaurs.Enums.FoodType;
+
 public abstract class Dinosaur {
 
     private String name;

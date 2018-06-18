@@ -1,5 +1,5 @@
-import Dinosaurs.DietType;
-import Dinosaurs.FoodType;
+import Dinosaurs.Enums.DietType;
+import Dinosaurs.Enums.FoodType;
 import Dinosaurs.SpeciesType;
 import Dinosaurs.Tyrannosaurus;
 import org.junit.Before;
